@@ -71,7 +71,7 @@ var rectangle = {
 console.log(rectangle.isSquare());
 
 var triangle = {
-  sideA: 2,
+  sideA: 10,
   sideB: 5,
   sideC: 5,
   isEquilateral: function() {
@@ -171,11 +171,11 @@ function validateCreditCard(n) {
   var Validated = { number:n }
   var last = n.slice(n.length -1, n.length)
   var isTrue = (last % 2 === 0)
+  // Remove symbols and aalphabet
   var remove = n.replace(/[a-z]/gi, '')
   var removeSym = remove.replace(/-/gi, '')
   var length = removeSym.length
   var split = removeSym.toString().split("").map(function(t) { return parseInt(t)})
-  count = 0
   var sum = split.reduce((a, b) => a+b, 0)
   if (length < 16) {
     Validated.valid = false
@@ -189,9 +189,13 @@ function validateCreditCard(n) {
     Validated.valid = false
     Validated.message = "Sum of numbers must be greater than 16"
   }
-  else if (sum % last === 0) {
+  else if (sum % 16 === 0) {
     Validated.valid = false
     Validated.message = "Numbers cannot all be the same"
+  }
+  else if (last % 2 !== 0) {
+    Validated.valid = false
+    Validated.message = "Last number must be even"
   }
   else {
     Validated.valid = true
@@ -200,7 +204,7 @@ function validateCreditCard(n) {
   return Validated
 }
 
-console.log(validateCreditCard("4444-4444-4444-444"));
+console.log(validateCreditCard("5555-5555-5555-5552"));
 
 var bank = [
   {
