@@ -101,6 +101,15 @@ function printStations(startLine, startStation, endLine, endStation) {
     return "Thats not a proper Journey";
   }
 }
+// this is simply the message for a simple one line trip
+function oneLine(startLine, startStation, endLine, endStation) {
+  var complete = printStations(startLine, startStation, endLine, endStation);
+  var message = "You will get on at " + complete.slice(0,1);
+    message += " You will stop at " + complete.slice(1, complete.length - 1);
+    message += " you will get off at " + complete.slice(complete.length - 1);
+    message += " " + complete.length + " stops in total";
+    return message;
+}
 // After seeing this code present in all complex lines I added it in to a function
 // this determines the slice values by using the length of the three arrays (start, end and joined)
 function finalMessage(newArr, startStation, endStation, examArr, counter) {
@@ -115,10 +124,9 @@ function finalMessage(newArr, startStation, endStation, examArr, counter) {
     message += " you will stop at " + complete.slice(count1 + 1, complete.length - 1);
   }
   message += " you will get off at " + complete.slice(complete.length - 1);
-  message += " You will stop at a total of " + complete.length + " stops";
+  message += " " + complete.length + " stops in total";
   return message;
 }
-
 // I would have liked to refactor the next four but as they all vary slight it cannot be done
 // this simply joins the arrays depending on the if statement to follow
 function backSwitch(startLine, startStation, endStation, endLine, startUnion, endUnion, startIndex, endIndex) {
@@ -168,15 +176,6 @@ function forLoop(startLine, startStation, endStation, endLine, startUnion, endUn
   }
   return finalMessage(newArr, startStation, endStation, examArr, counter);
 }
-// this is simply the message for a simple one line trip
-function oneLine(startLine, startStation, endLine, endStation) {
-  var complete = printStations(startLine, startStation, endLine, endStation);
-  var message = "You will get on at " + complete.slice(0,1);
-    message += " You will stop at " + complete.slice(1, complete.length - 1);
-    message += " you will get off at " + complete.slice(complete.length - 1);
-    message += " You will stop at a total of " + complete.length + " stops";
-    return message;
-}
 // Using the index's of start, end and union square for both lines determine which if statement to follow
 function sortStations(startLine, startStation, endLine, endStation) {
   var startIndex = indexOfTrip(startLine, startStation);
@@ -201,7 +200,6 @@ function sortStations(startLine, startStation, endLine, endStation) {
       return (backLoop(startLine, startStation, endStation, endLine, startUnion, endUnion, startIndex, endIndex));
     }
     // Forward loop
-    //
     else if (startIndex < startUnion && endIndex < endUnion) {
       return (forLoop(startLine, startStation, endStation, endLine, startUnion, endUnion, startIndex, endIndex ));
     }
@@ -221,14 +219,6 @@ console.log(sortStations( Lline, "8th", six_line, "grand central")); // for loop
 // six_line:["grand central", "33rd", "29th" ,"union square", "astor place"]
 
 // end of function anythin after or before this is purely testing
-
-
-
-
-
-
-
-
 
 
 
@@ -274,9 +264,6 @@ function sortedLines (line, station) {
   }
 }
 
-
-
-
 // step one find out if stop is on current line
 // if yes simply print out the stops
 //  if not pop the first array concat string and then print stops
@@ -294,7 +281,6 @@ function printStops(startLine, startStation, endLine, endStation) {
 }
 
 // console.log(printStops("Lline", "8th", "Nline", "Times square" ));
-
 // Testing the hard loops
 testArr1 = [1,2,3,4];
 testArr2 = [5,6,7,8];
@@ -319,10 +305,6 @@ function addFirstTwo(arr1, arr2) {
 // console.log(testArr1);
 // if (varline1[0].concat(varline2[1]).join("")) {}
 
-
-
-
-
 // concat concat concat concat concat concat concat or maybe not
 
 // identify line function
@@ -330,14 +312,6 @@ function addFirstTwo(arr1, arr2) {
 
 // compare two arrays
 // sort join the ===
-
-
-
-
-
-//
-//
-//
 // function indexOfUnion(arr, stop) {
 //   var result = arr.indexOf("union square")
 //   return result
