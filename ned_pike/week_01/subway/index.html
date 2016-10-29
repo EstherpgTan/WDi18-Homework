@@ -1,13 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="main.js"></script><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
 <body>
+  <div class="jumbotron">
+    <h1>All aboard!</h1>
+    <button class="btn btn-primary start">
+      Find your destination
+    </button>
+  </div>
+  <div class="container">
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container2">
+        <a id ="logo" href="#">WDI18</a>
+        <nav>
+          <ul id="main-nav" class="nav navbar-nav navbar-right">
+            <li><a href="#">About WDI18</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="row">
+      <div class="col-md-6">
+        <h1>WDI 18 Express</h1>
+        <div class="together">
+          <h5>Start stop: </h5><div class="one"></div>
+                             <div class="two"></div>
+          <h5>End stop: </h5><div class="three"></div>
+                           <div class="four"></div>
+        </div>
+        <h5>result</h5><div class="result"></div>
 
+        <h5 class="wrong">Error</h5>
+        <div class="error"></div>
+
+        <h5>Nline</h5>
+          <button class="btn btn-primary times_square">Times Square</button>
+          <button class = "btn btn-primary 34th">34th</button>
+          <button class="btn btn-primary 29th">29th</button>
+          <button class="btn btn-primary 23rd">23rd</button>
+          <button class="btn btn-primary union_square_N">Union Square</button>
+          <button class="btn btn-primary 8thN">8th</button>
+        <h5>Lline</h5>
+          <button class="btn btn-primary 8th">8th</button>
+          <button class="btn btn-primary 6th">6th</button>
+          <button class="btn btn-primary union_square_L">Union Square</button>
+          <button class="btn btn-primary 3rd">3rd</button>
+          <button class="btn btn-primary 1st">1st</button>
+        <h5>Six line</h5>
+          <button class="btn btn-primary grand_central">Grand Central</button>
+          <button class="btn btn-primary 33rd">33rd</button>
+          <button class="btn btn-primary 29thS">29th</button>
+          <button class="btn btn-primary union_square_S">Union Square</button>
+          <button class="btn btn-primary astor_place">Astor Place</button>
+        <br>
+        <button class="btn btn-success final">Find my way</button>
+        <button class="btn btn-warning clear">New trip?</button>
+
+      </div>
+      <div class="col-md-6">
+        <h1 class="describe">WDI Town</h1>
+        <div id="img"><img id="theImg" class="img-rounded img-responsive" src="http://washingtonchampionsleague.com/wp-includes/pomo/new-york-city-subway-train-i11.jpg" /></div>
+        <p class="explain">Come plan your trip with us and learn about the wonders of WDI Town!</p>
+      </div>
+    </div>
+    <footer class="footer">
+  <small>
+    A site by Ned Pike
+  </small>
+</footer>
+  </div>
 </body>
 </html>
