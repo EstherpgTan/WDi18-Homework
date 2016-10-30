@@ -30,6 +30,10 @@ div.result{
 
 }
 
+button {
+  transition: 0.5s;
+}
+
 .btn {
   margin-bottom: 10px;
 }

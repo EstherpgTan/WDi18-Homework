@@ -91,7 +91,9 @@ $(document).ready(function(){
        $("div.two").html(),
        $("div.three").html(),
        $("div.four").html() );
+       $("div.image_wrap").hide();
        imageMatch($("div.four").html());
+       $("div.image_wrap").fadeIn();
     $("div.result").html(input).append();
   });
 
@@ -154,11 +156,8 @@ $(document).ready(function(){
     Nline: ["Times square", "34th", "29th", "23rd", "union square", "8th "],
     six_line:["grand central", "33rd", "29th ", "union square", "astor place"]
   };
-  // convert internal arrays to vars for ease of access
-  var Nline = lines.Nline;
-  var Lline = lines.Lline;
-  var six_line = lines.six_line;
 
+  // convert internal arrays to vars for ease of access
   function sortedLines (line, station) {
     var first = lines.Lline;
     var second = lines.Nline;
@@ -353,65 +352,65 @@ $(document).ready(function(){
 
 //2nd version didnt work for lines that looped
 
-lines2 = {
-  Lline: [["8th", "6th", "union square"],["union square", "3rd", "1st"]],
-  Nline: [["Times square", "34th", "29th", "23rd", "union square"],["union square", "astor place"]],
-  six_line:[["azard central", "33rd", "29th", "union square"],["union square", "astor place"]]
-};
+// lines2 = {
+//   Lline: [["8th", "6th", "union square"],["union square", "3rd", "1st"]],
+//   Nline: [["Times square", "34th", "29th", "23rd", "union square"],["union square", "astor place"]],
+//   six_line:[["azard central", "33rd", "29th", "union square"],["union square", "astor place"]]
+// };
 
 // sort the users input
-function sortedLines (line, station) {
-  var first = lines.Lline;
-  var second = lines.Nline;
-  var third = lines.six_line;
-
-  if (first.includes(station) && line === "Lline") {
-    return lines.Lline;
-  }
-  if (third.includes(station) && line === "Nline") {
-    return lines.Nline;
-  }
-  if (fifth.includes(station) && line === "six_line") {
-    return lines.six_line;
-  }
-  else {
-    return "not a line";
-  }
-}
+// function sortedLines (line, station) {
+//   var first = lines.Lline;
+//   var second = lines.Nline;
+//   var third = lines.six_line;
+//
+//   if (first.includes(station) && line === "Lline") {
+//     return lines.Lline;
+//   }
+//   if (third.includes(station) && line === "Nline") {
+//     return lines.Nline;
+//   }
+//   if (fifth.includes(station) && line === "six_line") {
+//     return lines.six_line;
+//   }
+//   else {
+//     return "not a line";
+//   }
+// }
 
 // step one find out if stop is on current line
 // if yes simply print out the stops
 //  if not pop the first array concat string and then print stops
-function printStops(startLine, startStation, endLine, endStation) {
-  var stationArr1 = sortedLines(startLine, startStation);
-  var stationArr2 = sortedLines(endLine, endStation);
-  if (stationArr1.includes(endStation) && stationArr2.includes(endStation)) {
-    return forwardStops(stationArr1, startStation, stationArr2, endStation);
-  }
-  else {
-    stationArr1.pop();
-    var completeLine = stationArr1.concat(stationArr2);
-    return forwardStops(completeLine, startStation, completeLine, endStation);
-  }
-}
+// function printStops(startLine, startStation, endLine, endStation) {
+//   var stationArr1 = sortedLines(startLine, startStation);
+//   var stationArr2 = sortedLines(endLine, endStation);
+//   if (stationArr1.includes(endStation) && stationArr2.includes(endStation)) {
+//     return forwardStops(stationArr1, startStation, stationArr2, endStation);
+//   }
+//   else {
+//     stationArr1.pop();
+//     var completeLine = stationArr1.concat(stationArr2);
+//     return forwardStops(completeLine, startStation, completeLine, endStation);
+//   }
+// }
 
 // console.log(printStops("Lline", "8th", "Nline", "Times square" ));
 // Testing the hard loops
-testArr1 = [1,2,3,4];
-testArr2 = [5,6,7,8];
-function addLastTwo(arr1, arr2) {
-  for (var i = 3; i > 1; i--) {
-    arr1.push(arr2[i]);
-  }
-  return arr1;
-}
-
-function addFirstTwo(arr1, arr2) {
-  for(var i = 0; i < 2; i++) {
-    arr1.unshift(arr2[i]);
-  }
-  return arr1;
-}
+// testArr1 = [1,2,3,4];
+// testArr2 = [5,6,7,8];
+// function addLastTwo(arr1, arr2) {
+//   for (var i = 3; i > 1; i--) {
+//     arr1.push(arr2[i]);
+//   }
+//   return arr1;
+// }
+//
+// function addFirstTwo(arr1, arr2) {
+//   for(var i = 0; i < 2; i++) {
+//     arr1.unshift(arr2[i]);
+//   }
+//   return arr1;
+// }
 // console.log(testArr1.slice(2,4));
 // console.log(addFirstTwo(testArr1, testArr2));
 // console.log(addLastTwo(testArr1, testArr2));
