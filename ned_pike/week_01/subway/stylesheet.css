@@ -69,9 +69,20 @@ h5.wrong {
 	font-weight: bold;
 
 }
+a{
+  transition: 0.2s;
+}
 a:hover {
   color: white;
   text-decoration: none;
+}
+.hover:hover {
+  box-shadow: 0px 0px 2px #933c2ee6;
+  border: none;
+}
+
+.btn-primary{
+  border:none; 
 }
 
 footer {

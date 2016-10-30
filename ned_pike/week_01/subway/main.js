@@ -13,7 +13,7 @@ $(document).ready(function(){
   function buttonColor(input1, input2, divName){
     if($("div.one").html() === "" || $("div.three").html() === ""){
       inputSort(input1, input2);
-      $(divName).css("background", "green");
+      $(divName).css("background", "#c97e7e");
     }
   }
   // Nline stops
@@ -105,7 +105,8 @@ $(document).ready(function(){
     $("div.error").html("");
     $("h5.wrong").hide();
     $("div.result").html("");
-    $(".btn-primary").css("background","#337ab7");
+    $(".btn-primary").css("background-color","#337ab7");
+    $(".btn-primary").addClass("hover");
   });
 
   function isEmpty(input1, input2) {
@@ -330,11 +331,11 @@ $(document).ready(function(){
       }
     }
   }
-  console.log(sortStations("Nline","Times square","Nline","8th "));
-  console.log(sortStations("Lline", "1st", "six line", "grand central")); //back switch
-  console.log(sortStations("Nline", "8th ", "six line", "grand central")); //back loop
-  console.log(sortStations("six line", "grand central", "Nline", "8th ")); // for switch
-  console.log(sortStations( "Lline", "8th", "six line", "grand central")); // for loop
+  // console.log(sortStations("Nline","Times square","Nline","8th "));
+  // console.log(sortStations("Lline", "1st", "six line", "grand central")); //back switch
+  // console.log(sortStations("Nline", "8th ", "six line", "grand central")); //back loop
+  // console.log(sortStations("six line", "grand central", "Nline", "8th ")); // for switch
+  // console.log(sortStations( "Lline", "8th", "six line", "grand central")); // for loop
 
 });
 // start of function d
