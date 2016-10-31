@@ -1,0 +1,12 @@
+header{
+  height: 15em;
+  background-image: url("background.jpg");
+}
+.logo {
+  margin-top: -8em;
+  margin-left: 40%;
+}
+div.main {
+  background: grey;
+
+}
