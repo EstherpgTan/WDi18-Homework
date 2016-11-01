@@ -1,0 +1,91 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Times New Roman", serif;
+  max-width: 960px;
+  color: #656565;
+}
+
+.logo {
+  height: 29px;
+  width: 197px;
+  background-image: url(../images/brook-and-lyn-logo.gif);
+  margin-top: 5px;
+}
+
+.blog {
+  height: 500px;
+  width: 960px;
+  background-image: url(../images/home-bloghero.png);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.shop {
+  height: 500px;
+  width: 960px;
+  background-image: url(../images/home-rings.png);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.links {
+  background-color: white;
+  overflow: auto;
+}
+
+.link1 {
+  height: 143px;
+  width: 224px;
+  background-image: url(../images/press-nbcnewyork.gif);
+  border: 5px solid lightgrey;
+  margin: 5px 4px 5px 0px;
+  float: left
+}
+
+.link2 {
+  height: 143px;
+  width: 224px;
+  background-image: url(../images/press-huffpost.gif);
+  border: 5px solid lightgrey;
+  margin: 5px 4px 5px 4px;
+  float: left
+}
+.link3 {
+  height: 143px;
+  width: 224px;
+  background-image: url(../images/press-logo_lucky.gif);
+  border: 5px solid lightgrey;
+  margin: 5px 4px 5px 4px;
+  float: left
+}
+.link4 {
+  height: 143px;
+  width: 224px;
+  background-image: url(../images/press-marieclaire.gif);
+  border: 5px solid lightgrey;
+  margin: 5px 0px 5px 4px;
+  float: left
+}
+
+footer {
+  margin: 5px 5px 5px 0px;
+  font-size: 14px;
+}
+
+/*a.links:hover {
+  color: lightgrey;
+}*/
