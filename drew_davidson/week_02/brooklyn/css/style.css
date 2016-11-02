@@ -62,7 +62,7 @@ body {
   background-image: url(../images/press-huffpost.gif);
   border: 5px solid lightgrey;
   margin: 5px 4px 5px 4px;
-  float: left
+  float: left;
 }
 .link3 {
   height: 143px;
@@ -70,7 +70,7 @@ body {
   background-image: url(../images/press-logo_lucky.gif);
   border: 5px solid lightgrey;
   margin: 5px 4px 5px 4px;
-  float: left
+  float: left;
 }
 .link4 {
   height: 143px;
@@ -78,7 +78,7 @@ body {
   background-image: url(../images/press-marieclaire.gif);
   border: 5px solid lightgrey;
   margin: 5px 0px 5px 4px;
-  float: left
+  float: left;
 }
 
 footer {
