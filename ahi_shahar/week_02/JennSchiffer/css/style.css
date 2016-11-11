@@ -1,0 +1,263 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Proza Libre", "Helvetica", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  width: 1000px;
+  background-color: ghostwhite;
+  text-align: center;
+}
+nav {
+  font-size: 20px;
+  margin: 0 auto;
+  overflow: auto;
+  height: 85px;
+  width: 100%;
+  position: fixed;
+  left: 33%;
+  /*padding-left: 18%;*/
+  background-color: ghostwhite;
+  z-index: 1000;
+}
+
+nav a {
+  float:left;
+  text-align: center;
+  color: black;
+  height: 100%;
+  font-size: 15px;
+  padding: 20px;
+  padding-top: 27px;
+  text-decoration: none;
+}
+nav .fa {
+  font-size: 30px;
+}
+nav a {
+  cursor: default;
+}
+
+nav a.firstFour:hover {
+  background-color: grey;
+  background: radial-gradient(lightpink 45%, ghostwhite 55%); /* Standard syntax */
+  cursor: pointer;
+}
+
+nav button {
+  font-size: 15px;
+  float: left;
+  border-radius: 5px;
+}
+
+nav a button:hover {
+  cursor: pointer;
+}
+.thingsSheDo {
+  width: 100%;
+  text-align: center;
+  position: static;
+}
+.columns {
+  position: relative;
+  width: 100%;
+  padding: 10px 10px 10px 0;
+  overflow: auto;
+  /*border: 5px solid grey;
+  border-style: outset;*/
+}
+
+.column {
+  width: calc(94%/3);
+  /*border: 3px solid grey;
+  border-style: inset;*/
+  float: left;
+  margin: 1%;
+  padding: 10px 5px;
+}
+article {
+  text-align: left;
+  margin: 15px;
+}
+li {
+  padding-top: 13px;
+  margin-left: -30px;
+}
+article span {
+  padding-left: 70%;
+}
+.art img {
+  width: 100%;
+  border-radius: 20px;
+}
+article a {
+  text-decoration: none;
+  white-space: normal;
+  word-spacing: normal;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+iframe:hover{
+  position: fixed;
+  width: 500px;
+  height: 400px;
+  top: 30%;
+  left: 40%;
+}
+footer {
+  font-size: 12px;
+  height: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 1000px;
+  color: white;
+  background-color: black;
+}
+
+body h1 {
+  padding-top: 100px;
+}
+
+.absolute {
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  background: radial-gradient(black 45%, ghostwhite 55%);;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  z-index: 900;
+  font-size: 0;
+  transition: all 1s ease-in-out;
+}
+div.absolute.a1 {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+}
+div.absolute.a2 {
+  position: fixed;
+  top: 66%;
+  left: 30%;
+}
+div.absolute.a3 {
+  position: fixed;
+  top: 44%;
+  left: 56%;
+}
+div.absolute.a4 {
+  position: fixed;
+  top: 72%;
+  left: 69%;
+}
+div.absolute.a5 {
+  position: fixed;
+  top: 14%;
+  left: 77%;
+}
+div.absolute.a6 {
+  position: fixed;
+  top: 60%;
+  left: 8%;
+}
+.nightmare {
+  margin: 0 auto;
+  margin-top: 300px;
+  width: 45%;
+  height: 45%;
+}
+#info:hover {
+  position: absolute;
+  background: radial-gradient(white 45%, black 55%, ghostwhite 15%);
+  border-radius: 5%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11111000;
+  color: black;
+  font-size: 20px;
+}
+#info1:hover {
+  position: absolute;
+  background: radial-gradient(white 45%, black 55%, ghostwhite 15%);
+  border-radius: 5%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11111000;
+  color: black;
+  font-size: 20px;
+}
+
+#info2:hover {
+  position: absolute;
+  background: radial-gradient(white 45%, black 55%, ghostwhite 15%);
+  border-radius: 5%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11111000;
+  color: black;
+  font-size: 20px;
+}
+
+#info3:hover {
+  position: absolute;
+  background: radial-gradient(white 45%, black 55%, ghostwhite 15%);
+  border-radius: 5%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11111000;
+  color: black;
+  font-size: 20px;
+}
+#info4:hover {
+  position: absolute;
+  background: radial-gradient(white 45%, black 55%, ghostwhite 15%);
+  border-radius: 5%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11111000;
+  color: black;
+  font-size: 20px;
+}
+#info5:hover {
+  position: absolute;
+  background: radial-gradient(white 45%, black 55%, ghostwhite 15%);
+  border-radius: 5%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11111000;
+  color: black;
+  font-size: 20px;
+}
+#info3 img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50px;
+}

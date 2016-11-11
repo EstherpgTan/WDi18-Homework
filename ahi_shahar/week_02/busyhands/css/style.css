@@ -1,0 +1,217 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+ width: 1100px;
+ margin: auto;
+ height: 460px;
+ background-image: url(../images/bg_wrapper.png);
+}
+
+
+nav {
+  overflow: auto;
+  height: 85px;
+  padding-left: 10%;
+}
+
+nav a {
+  float:left;
+  text-align: center;
+  color: white;
+  height: 100%;
+  font-size: 15px;
+  padding: 28px;
+  text-decoration: none;
+}
+
+a:hover {
+
+  /*border-bottom: 3px solid white;*/
+  background:url('../images/bg_nav_rollover.png') ;
+  background-repeat: repeat-x;
+}
+
+.bars {
+  margin: auto;
+  width: 80%;
+  padding: 30px;
+  overflow: auto;
+}
+
+#left {
+  float: left;
+}
+
+#right {
+  float: right;
+  overflow: auto;
+}
+
+#twit {
+ width: 60px;
+ height:60px;
+ float: left;
+ background:url('../images/socialTf.png') center top no-repeat;
+}
+
+#twit:hover {
+   background-image: url('../images/socialT.png');
+}
+
+#fb {
+  width: 60px;
+  height:60px;
+  float: left;
+  background:url('../images/socialFf.png') center top no-repeat;
+}
+#fb:hover {
+   background-image: url('../images/socialF.png');
+}
+#in {
+  width: 60px;
+  height:60px;
+  float: left;
+  background:url('../images/socialInf.png') center top no-repeat;
+}
+#in:hover {
+   background-image: url('../images/socialIn.png');
+}
+#ccc {
+  width: 60px;
+  height:60px;
+  float: left;
+  background:url('../images/socialCf.png') center top no-repeat;
+}
+#ccc:hover {
+   background-image: url('../images/socialC.png');
+}
+
+.secondContainer {
+  width: 100%;
+  height: 120px;
+  background-image: url('/Users/ahishahar/Documents/general_assembly/WDi18/02-html-and-css/html-labs/busyhands/images/bg_blurb.jpg');
+  background-size: cover;
+  margin: auto;
+  margin-top: -155px;
+
+}
+.banner {
+  margin: auto;
+  width: 840px;
+  height: 360px;
+}
+
+.shadow {
+  width: 840px;
+  margin-top: -5px;
+}
+
+.thirdCont {
+  height: 80px;
+  width: 100%;
+  background-image: url('/Users/ahishahar/Documents/general_assembly/WDi18/02-html-and-css/html-labs/busyhands/images/bg_body.jpg');
+}
+.inThird{
+  margin-left: 13%;
+  width: 840px;
+  height: 75px;
+  border: 1px solid lightgrey;
+  border-style: inset;
+  overflow: auto;
+}
+.leftP {
+  float:left;
+  margin-left: 10px;
+  width: 70%;
+}
+.rightP {
+  margin:
+  width: 30%;
+  float: right;
+}
+
+div .homes {
+  height: 250px;
+  width: 100%;
+  overflow: auto;
+  padding-left: 13%;
+  background-image: url('/Users/ahishahar/Documents/general_assembly/WDi18/02-html-and-css/html-labs/busyhands/images/bg_body.jpg');
+}
+
+h2 {
+  font-weight: normal;
+  color: darkgrey;
+}
+div .homes #first {
+  width: 26%;
+  float: left;
+  margin-right: 30px;
+}
+div .homes #second {
+  width: 26%;
+  float: left;
+  margin-right: 30px;
+}
+div .homes #third {
+  width: 26%;
+  float: left;
+  margin-right: 30px;
+}
+div .homes #first img {
+  margin: auto;
+  width: 100%;
+  padding: 1px;
+  border: 3px solid lightgrey;
+}
+div .homes #second img {
+  margin: auto;
+  width: 100%;
+  padding: 1px;
+  border: 3px solid lightgrey;
+}
+div .homes #third img {
+  margin: auto;
+  width: 100%;
+  padding: 1px;
+  border: 3px solid lightgrey;
+}
+p a {
+  color: blue;
+  text-decoration: none;
+}
+.homes p {
+  font-size: 14px;
+  text-align: left;
+}
+footer {
+  background-color: black;
+  height: 300px;
+  width: 100%;
+  overflow: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+footer #left {
+  float: left;
+  width: 25%;
+  background-color: white;
+  /*margin: auto;*/
+  height: 200px;
+}
+footer #center{
+  float: left;
+  width: 50%;
+  background-color: white;
+  /*margin: auto;*/
+  height: 200px;
+}
+footer #right{
+  float: left;
+  width: 25%;
+  background-color: white;
+  /*margin: auto;*/
+  height: 200px;
+}
