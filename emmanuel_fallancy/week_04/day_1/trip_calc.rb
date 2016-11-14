@@ -32,6 +32,7 @@ def splash
   puts "However, these are just rough estimation which varies on driving pattern."
 end
 
+# This will calculate the Fuel cost
 def calculateFuelCost( distance, distancePerGallon, pricePerGallon )
   # Cost = ( Distance * Price per gallon ) / Efficiency
   cost = ( distance * pricePerGallon ) / distancePerGallon
@@ -39,6 +40,7 @@ def calculateFuelCost( distance, distancePerGallon, pricePerGallon )
   return cost.round( 2 )
 end
 
+# This will calculate the Travel time
 def calculateTravelTime( distance, speed )
   time = distance / speed
 
