@@ -13,10 +13,10 @@ var cartForParty = {
   proteinShake: "22.36"
 };
 
-var cashRegister = function( cart ) {
+var cashRegister = function ( cart ) {
   var totalPrice = 0;
 
-  for( var item in cart ) {
+  for ( var item in cart ) {
     totalPrice += parseFloat( cart[item] );
   }
 
@@ -24,4 +24,4 @@ var cashRegister = function( cart ) {
 };
 
 // Output
-console.log( cashRegister(cartForParty) ); // 60.55
+console.log( cashRegister( cartForParty ) ); // 60.55

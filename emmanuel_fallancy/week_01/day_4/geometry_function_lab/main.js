@@ -8,8 +8,8 @@ var rectangle = {
 };
 
 // isSquare - Returns whether the rectangle is a square or not
-var isSquare = function() {
-  if( rectangle.width === rectangle.length ) {
+var isSquare = function () {
+  if ( rectangle.width === rectangle.length ) {
     return true;
   }
   else {
@@ -18,12 +18,12 @@ var isSquare = function() {
 };
 
 // area - Returns the area of the rectangle
-var area = function() {
+var area = function () {
   return rectangle.length * rectangle.width;
 };
 
 // perimeter - Returns the perimeter of the rectangle
-var perimeter = function() {
+var perimeter = function () {
   // perimeter = 2 * ( length + width )
   return 2 * ( rectangle.length + rectangle.width );
 };
@@ -41,9 +41,9 @@ var triangle = {
 };
 
 // isEquilateral - Returns whether the triangle is equilateral or not
-var isEquilateral = function() {
-  if( triangle.sideA === triangle.sideB
-      && triangle.sideA === triangle.sideC ) {
+var isEquilateral = function () {
+  if ( triangle.sideA === triangle.sideB
+       && triangle.sideA === triangle.sideC ) {
     return true;
   }
   else {
@@ -52,13 +52,13 @@ var isEquilateral = function() {
 };
 
 // isIsosceles - Returns whether the triangle is isosceles or not
-var isIsosceles = function() {
-  if( triangle.sideA === triangle.sideB
+var isIsosceles = function () {
+  if ( triangle.sideA === triangle.sideB
       || triangle.sideA === triangle.sideC ) {
     return true;
   }
-  else if( triangle.sideB === triangle.sideA
-           || triangle.sideB === triangle.sideC ) {
+  else if ( triangle.sideB === triangle.sideA
+            || triangle.sideB === triangle.sideC ) {
     return true;
   }
   else {
@@ -67,10 +67,10 @@ var isIsosceles = function() {
 };
 
 // area - Returns the area of the Triangle
-var area = function() {
+var area = function () {
   var areaResult = "";
 
-  if( isIsosceles() ) {
+  if ( isIsosceles() ) {
     var base = 0;
     var baseToComputeHeight = 0;
     var height = 0;
@@ -79,13 +79,13 @@ var area = function() {
 
     // Get the odd side to be the base
     // Assign the hypotenuse
-    if( triangle.sideA !== triangle.sideB
-        && triangle.sideA !== triangle.sideB ) {
+    if ( triangle.sideA !== triangle.sideB
+         && triangle.sideA !== triangle.sideB ) {
       base = triangle.sideA;
       hypoSide = triangle.sideB;
     }
-    else if( triangle.sideB !== triangle.sideC
-             && triangle.sideB !== triangle.sideA ) {
+    else if ( triangle.sideB !== triangle.sideC
+              && triangle.sideB !== triangle.sideA ) {
       base = triange.sideB;
       hypoSide = triangle.sideA;
     }
@@ -102,7 +102,7 @@ var area = function() {
 
     areaResult = "The area of triangle is " + String( area.toFixed( 2 ) );
   }
-  else if( isEquilateral() ) {
+  else if ( isEquilateral() ) {
     var base = triangle.sideA;
     var baseToComputeHeight = base / 2;
     var hypoSide = triangle.sideA;
@@ -120,37 +120,37 @@ var area = function() {
 };
 
 // isObtuse - Returns whether the triangle is obtuse or not
-var isObtuse = function() {
+var isObtuse = function () {
    // Dude, I suck at high school math!
    var isObtuseTriangle = false;
 
    // If the triangle is not isosceles or equilateral
-   if( !isIsosceles() && !isEquilateral() ) {
+   if ( !isIsosceles() && !isEquilateral() ) {
      var longestSide = Math.max( triangle.sideA,
                                  triangle.sideB,
                                  triangle.sideC );
 
      // If the longestSide matches the first side of the triangle
-     if( longestSide === triangle.sideA ) {
+     if ( longestSide === triangle.sideA ) {
 
        var otherSide = Math.pow( triangle.sideB, 2 ) + Math.pow( triangle.sideC, 2 );
-       if( Math.pow( longestSide, 2 ) > Math.pow( otherSide, 2 ) ) {
-         isObtuseTriangle = true;
+       if ( Math.pow( longestSide, 2 ) > Math.pow( otherSide, 2 ) ) {
+        isObtuseTriangle = true;
        }
      }
      // If the longestSide matches the second side of the triangle
-     else if( longestSide === triangle.sideB ) {
+     else if ( longestSide === triangle.sideB ) {
 
        var otherSide = Math.pow( triangle.sideA, 2 ) + Math.pow( triangle.sideC, 2 );
-       if( Math.pow( longestSide, 2 ) > Math.pow( otherSide, 2 ) ) {
+       if ( Math.pow( longestSide, 2 ) > Math.pow( otherSide, 2 ) ) {
          isObtuseTriangle = true;
        }
      }
      // If the longestSide matches the third side of the triangle
-     else if( longestSide === triangle.sideC ) {
+     else if ( longestSide === triangle.sideC ) {
 
        var otherSide = Math.pow( triangle.sideA, 2 ) + Math.pow( triangle.sideB, 2 );
-       if( Math.pow( longestSide, 2 ) > Math.pow( otherSide, 2 ) ) {
+       if ( Math.pow( longestSide, 2 ) > Math.pow( otherSide, 2 ) ) {
          isObtuseTriangle = true;
        }
      }

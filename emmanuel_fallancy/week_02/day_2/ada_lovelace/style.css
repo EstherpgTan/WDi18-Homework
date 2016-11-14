@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bree Serif', serif;
+}
+
+h2 {
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.header {
+  position: absolute;
+  left: 340px;
+  font-size: 40px;
+  width: 600px;
+  height: 200px;
+  text-align: center;
+  color: lightslategray;
+  z-index: 1000;
+  font-style: italic;
+}
+
+.container {
+
+  width: 800px;
+  height: 560px;
+  margin: 0 auto;
+  overflow: auto;
+  position: absolute;
+  top: 90px;
+  left: 220px;
+  z-index: 0;
+
+}
+
+.container-top {
+  background-color: hotpink;
+  width: 500px;
+  height: 180px;
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  z-index: 0;
+  padding: 60px 0;
+  font-size: 45px;
+  background-image: url( images.jpeg );
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.container-middle {
+  background-color: lightgreen;
+  width: 500px;
+  height: 210px;
+  position: absolute;
+  top: 170px;
+  left: 30%;
+  z-index: 10;
+  padding: 75px 0;
+  text-align: right;
+  font-size: 45px;
+  background-image: url( bernoulli_number.gif );
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.container-bottom {
+  background-color: turquoise;
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 330px;
+  left: 10%;
+  z-index: 20;
+  padding: 70px 0;
+  font-size: 45px;
+  background-image: url( jacquard_loom.jpg );
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0;
+}
+
+a#indextitle {
+  opacity: 1;
+  color: lightslategray;
+}
+
+a:hover#indextitle {
+  background-color: white;
+}
+
+.d-span {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+a:hover {
+  opacity: 1;
+  z-index: 200;
+  background-color: black;
+  color: white;
+}
+
+.binary {
+  overflow: auto;
+  position: relative;
+  top: 150px;
+}
+
+.binaryleft {
+  float: left;
+  width: 50px;
+  margin-top: 50px;
+}
+
+.binaryright {
+  float: right;
+  width: 50px;
+  margin-right: 60px;
+}
+
+.container-left-life {
+  background-color: salmon;
+  width: 50%;
+  height: 400px;
+  position: absolute;
+  top: 70px;
+  left: 5%;
+  z-index: 20;
+  padding: 70px 0;
+  font-size: 45px;
+  background-size: cover;
+  box-shadow: 6px 6px 15px lightslategray;
+  background-image: url( "ada_lovelace_potrait.jpg" );
+  background-size: cover;
+}
+
+.container-left-life-img {
+  position: relative;
+  font-size: 20px;
+  left: 5px;
+  bottom: 70px;
+  opacity: 0.8;
+  font-style: italic;
+  color: white;
+}
+
+.container-right-life {
+  width: 40%;
+  height: 400px;
+  position: absolute;
+  top: 70px;
+  left: 58%;
+  z-index: 20;
+  padding: 70px 0;
+  font-size: 45px;
+  background-size: cover;
+  box-shadow: 6px 6px 15px lightslategray;
+}
+
+.container-right-life-content {
+  color: lightslategray;
+  font-size: 20px;
+}
+
+.container-left-adalytics {
+  background-color: salmon;
+  width: 50%;
+  height: 300px;
+  position: absolute;
+  top: 70px;
+  left: 5%;
+  z-index: 20;
+  padding: 70px 0;
+  font-size: 45px;
+  background-size: cover;
+  box-shadow: 6px 6px 15px lightslategray;
+  background-image: url( "difference-engine.jpg" );
+  background-size: contain;
+}
+
+.container-left-adalytics-img {
+  position: relative;
+  font-size: 20px;
+  left: 5px;
+  bottom: 70px;
+  opacity: 0.8;
+  font-style: italic;
+  color: white;
+}
+
+.container-right-adalytics {
+  width: 40%;
+  height: 400px;
+  position: absolute;
+  top: 70px;
+  left: 58%;
+  z-index: 20;
+  padding: 70px 0;
+  font-size: 45px;
+  background-size: cover;
+}
+
+.container-right-adalytics-content {
+  color: lightslategray;
+  font-size: 20px;
+}
+
+.container-left-something {
+  background-color: salmon;
+  width: 50%;
+  height: 400px;
+  position: absolute;
+  top: 70px;
+  left: 5%;
+  z-index: 20;
+  padding: 70px 0;
+  font-size: 45px;
+  background-size: cover;
+  box-shadow: 6px 6px 15px lightslategray;
+  background-image: url( "bernoulli_number_diagram.jpg" );
+  background-size: cover;
+}
+
+.container-left-something-img {
+  position: relative;
+  font-size: 22px;
+  left: 15px;
+  bottom: 65px;
+  opacity: 0.8;
+  font-style: italic;
+  color: black;
+}
+
+.container-right-something {
+  width: 40%;
+  height: 400px;
+  position: absolute;
+  top: 70px;
+  left: 58%;
+  z-index: 20;
+  padding: 70px 0;
+  font-size: 45px;
+  background-size: cover;
+  box-shadow: 6px 6px 15px lightslategray;
+}
+
+.container-right-something-content {
+  color: lightslategray;
+  font-size: 20px;
+}

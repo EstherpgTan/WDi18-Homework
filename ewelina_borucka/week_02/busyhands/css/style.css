@@ -1,0 +1,119 @@
+/*
+Project Name: Ecard.ly
+Client: General Assembly
+Author: Christopher Castig | @castig
+Developer @GA in NYC
+*/
+
+* {
+   -moz-box-sizing: border-box; /* Firexfox */
+   -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+   box-sizing: border-box; /* IE */
+}
+
+/*.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}*/
+
+body {
+  color: white;
+  font-size: 12px;
+  background-color: black ;
+}
+
+nav {
+color: white;
+}
+
+li {
+  display: inline-block;
+  padding: 10px 10px 10px 0;
+}
+
+.wrapper {
+  background-color: #e8e8e8;
+  margin: 0 auto;
+  color: black;
+  padding: 20px;
+}
+
+.all {
+  max-width: 940px;
+  margin: auto;
+
+}
+.logo {
+  margin: 20px;
+}
+
+.banner {
+  max-width: 100%;
+}
+
+.home-box {
+  overflow: auto;
+}
+
+.box {
+  width: 33%;
+  float: left;
+  padding: 20px;
+}
+
+.button-section {
+  overflow: auto;
+  margin: 20px;
+}
+
+.button {
+  float: left;
+  width: 20%;
+  padding-left: 10px;
+}
+
+.button-text {
+  float: left;
+  width: 80%;
+}
+
+.footer {
+  height: auto;
+}
+
+.footer-cols {
+  overflow: auto;
+  margin-top: 30px;
+}
+
+.col-1 {
+  width: 25%;
+  float: left;
+  padding: 30px;
+}
+
+.col-2 {
+  width: 50%;
+  float: left;
+  padding: 30px;
+
+}
+
+.col-3 {
+  width: 25%;
+  float: left;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #33ccff;
+}

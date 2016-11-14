@@ -22,44 +22,53 @@ var bank = {
                 totalBalance: 200
               }
             ],
-  addAccount: function( account ) {
+  addAccount: function ( account ) {
                 this.accounts.push( account );
                 console.log( account.owner + " created new account" );
               },
-  showBalance: function( owner ) {
-                 for( var i = 0; i < this.accounts.length; i++ ) {
-                   if( this.accounts[ i ].owner === owner) {
+  showBalance: function ( owner ) {
+                 for ( var i = 0; i < this.accounts.length; i++ ) {
+
+                   // If the owner exist, return the balance
+                   if ( this.accounts[ i ].owner === owner) {
                      return this.accounts[ i ].totalBalance;
                    }
                  }
 
+                 // Otherwise, return null to indicate the user does not exist
                  return null;
                },
-  depositToAccount: function( amount, owner ) {
-                      for( var i = 0; i < this.accounts.length; i++ ) {
-                         if( this.accounts[ i ].owner === owner ) {
-                           console.log( "Amount deposited to account "
-                                        + owner
-                                        + " is"
-                                        , amount );
-                           this.accounts[ i ].totalBalance += amount;
+  depositToAccount: function ( amount, owner ) {
+                      for ( var i = 0; i < this.accounts.length; i++ ) {
 
-                           return this.showBalance( owner );
+                         // if the owner exist, then deposit into his account
+                         if ( this.accounts[ i ].owner === owner ) {
+                              console.log( "Amount deposited to account "
+                                           + owner
+                                           + " is"
+                                           , amount );
+                              this.accounts[ i ].totalBalance += amount;
+
+                              // Show the current balance
+                              return this.showBalance( owner );
                          }
                       }
 
                       return null;
                     },
-  withdrawFromAccount: function( amount, owner ) {
-                         for( var i = 0; i < this.accounts.length; i++ ) {
-                           if( this.accounts[ i ].owner === owner ) {
-                             console.log( "Amount withdrawn from account "
-                                          + owner
-                                          +" is"
-                                          , amount );
-                             this.accounts[ i ].totalBalance -= amount;
+  withdrawFromAccount: function ( amount, owner ) {
+                         for ( var i = 0; i < this.accounts.length; i++ ) {
 
-                             return this.showBalance( owner );
+                           // If the owner exist, then deduct from his balance
+                           if ( this.accounts[ i ].owner === owner ) {
+                                console.log( "Amount withdrawn from account "
+                                             + owner
+                                             + " is"
+                                             , amount );
+                                this.accounts[ i ].totalBalance -= amount;
+
+                                // Show the new balance
+                                return this.showBalance( owner );
                            }
                          }
 

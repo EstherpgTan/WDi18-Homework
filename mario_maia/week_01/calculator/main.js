@@ -8,6 +8,7 @@ var numOne = 3;
 var squareNumber = function ( x ) {
   var resultSquare = Math.pow(x,2);
   console.log("The result of squaring " + x + " is " + resultSquare);
+  return resultSquare;
 };
 
 squareNumber( numOne );
@@ -20,6 +21,7 @@ var numTwo = 5;
 var halfNumber = function ( y ) {
   var resultHalf = y / 2;
   console.log("Half of " + y + " is " + resultHalf);
+  return resultHalf;
 };
 
 halfNumber( numTwo );
@@ -33,7 +35,8 @@ var numThree = 2;
 var numFour = 4;
 var percentOf = function ( z , w ) {
   var resultPercent = ( z / w ) * 100;
-  console.log(z + " is " + resultPercent + "% of " + w)
+  console.log(z + " is " + resultPercent + "% of " + w);
+  return resultPercent;
 }
 
 percentOf( numThree , numFour );
@@ -60,33 +63,44 @@ areaOfCircle( radius );
   // Calculate the area of a circle with the result of #2 as the radius.
   // Calculate what percentage that area is of the squared result (#3).
 
-var numFive = 3;
-var halfNumberB= function ( n ) {
-  var resultHalf = halfNumber ( n );
-  return resultHalf;
-};
-halfNumberB ( numFive );
+var num =3;
+var complexCalculation = function ( n ) {
+  var half = halfNumber ( n );
+  var squared = squareNumber( half );
+  var area = areaOfCircle( squared );
+  var result = percentOf( area, squared );
+  return result;
+}
 
+complexCalculation ( num );
 
-var numSix = 1;
-var squareNumberB = function ( m ) {
-  var resultSquareB = squareNumber ( m );
-  return resultSquareB;
-};
-squareNumberB( numSix );
-
-
-var radiusB = 2;
-var areaOfCircleB = function ( p ) {
-  var resultAreaB = areaOfCircle ( p );
-  return resultAreaB;
-};
-areaOfCircleB( radiusB );
-
-// to be fixed..
-// var percentOfB = function ( r, s ) {
-//   var v = areaOfCircleB(r);
-//   var w = squareNumberB(s);
-//   var percresult = ( v / w );
-// }
-// percentOfB ()
+// var numFive = 3;
+// var halfNumberB= function ( n ) {
+//   var resultHalf = halfNumber ( n );
+//   return resultHalf;
+// };
+// halfNumberB ( numFive );
+//
+//
+// var numSix = 1;
+// var squareNumberB = function ( m ) {
+//   var resultSquareB = squareNumber ( m );
+//   return resultSquareB;
+// };
+// squareNumberB( numSix );
+//
+//
+// var radiusB = 2;
+// var areaOfCircleB = function ( p ) {
+//   var resultAreaB = areaOfCircle ( p );
+//   return resultAreaB;
+// };
+// areaOfCircleB( radiusB );
+//
+// // to be fixed..
+// // var percentOfB = function ( r, s ) {
+// //   var v = areaOfCircleB(r);
+// //   var w = squareNumberB(s);
+// //   var percresult = ( v / w );
+// // }
+// // percentOfB ()

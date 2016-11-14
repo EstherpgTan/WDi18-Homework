@@ -1,0 +1,162 @@
+body {
+  background-image: url( "images/bg_body.jpg" );
+  background-color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-size: auto;
+}
+
+#wrapper {
+  background-color: white;
+  margin: 10px 55px;
+  overflow: auto;
+  height: 60px;
+  padding: 3px;
+  background-image: url( "images/bg_body.jpg" );
+  background-size: contain;
+}
+
+#container {
+  width: 85%;
+  margin: 0 60px;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+ul {
+  margin: 0 55px;
+}
+
+li {
+  display: inline-block;
+  padding: 20px;
+}
+
+#main-content {
+  float: left;
+  height: 100%
+}
+
+#social-media {
+  height: 50%;
+  float: right;
+}
+
+.photo-banner {
+  padding: 3px;
+  margin: 0 55px;
+  height: 90%;
+  box-sizing: border-box;
+}
+
+.photo-banner img {
+  margin: 0;
+}
+
+#shadow {
+  position: relative;
+  bottom: 5px;
+}
+
+.blurb {
+  margin: 0 50px;
+  padding: 15px;
+  overflow: auto;
+  box-sizing: border-box;
+  box-shadow: -2px -1px 3px gray;
+  background-image: url( "images/bg_blurb.jpg" );
+  background-size: cover;
+}
+
+.blurb-article {
+  width: 70%;
+  float: left;
+}
+
+.blurb-image {
+  width: 30%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 50px;
+}
+
+.home-boxes {
+  overflow: auto;
+  padding: 5px;
+  margin: 0 55px;
+
+}
+
+.home-box {
+  float: left;
+  margin: 0 15px;
+  box-sizing: border-box;
+  width: 30%;
+  padding: 5px;
+}
+
+.home-box img {
+  border: 3px solid gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: black;
+  color: gray;
+}
+
+.footers {
+  overflow: auto;
+  width: 80%;
+  margin: 0 60px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.nav-footer {
+  float: left;
+  width: 33%
+}
+
+.nav ul {
+  padding: 10px 0;
+
+}
+
+.nav-footer ul li {
+  display: block;
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 2px solid gray;
+}
+
+.miscellaneous {
+  margin: 15px 130px 0 60px;
+  padding: 0 80px;
+  overflow: auto;
+  font-size: 14px;
+}
+
+.copyright {
+  float: left;
+}
+
+.themes {
+  float: right;
+}
+
+.nav-footer-first-ul-li {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+#no-border-bottom {
+  border-bottom: 0;
+}
