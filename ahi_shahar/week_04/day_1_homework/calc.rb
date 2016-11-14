@@ -94,21 +94,22 @@ def b_m_i
   weight = gets.to_f
   print "what is your age? "
   age = gets.to_i
-  age_bonus = ((age-15)/10).to_i #calculates BMI bonuses according to ages
-  bmi_value = weight/(height*height) + age_bonus #calculates BMI with bonuses
+  age_bonus = ((age-15)/10).to_i #calculates BMI bonuses according to ages\
+  puts age_bonus
+  bmi_value = weight/(height*height) - age_bonus #calculates BMI with bonuses
 
   if bmi_value >= 19 && bmi_value <= 24.9
-    result = "normal weight"
+    result = "normal weight".color(:darkgreen)
   elsif bmi_value <= 29.9
-    result = "Overweight"
+    result = "Overweight".color(:green)
   elsif bmi_value <= 34.9
-    result = "Obesity level I"
+    result = "Obesity level I".color(:yellow)
   elsif bmi_value <= 39.9
-    result = "Obesity level II"
+    result = "Obesity level II".color(:orange)
   elsif bmi_value >= 40
-    result = "Obesity level III"
+    result = "Obesity level III".color(:red)
   else
-    result = "something went wrong..."
+    result = "something went wrong...".color(:silver)
   end
   puts result
 end
@@ -126,7 +127,7 @@ def trip_planner
   trip_time = (distance / avg_speed).to_f
   trip_cost = distance / kmpl * cost_lr
 
-  puts "the trip will take about #{trip_time} hours, and will cost about #{trip_cost}$ plus another #{(trip_cost/5).to_i}$ for snacks!"
+  puts "the trip will take about #{trip_time} hours, and will cost about #{trip_cost}$ plus another #{(trip_cost/5).to_i}$ for snacks, party on!"
 end
 
 #keep running the menu until user_choice is equal to q
