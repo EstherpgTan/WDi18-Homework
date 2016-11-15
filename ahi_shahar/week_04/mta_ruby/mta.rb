@@ -62,7 +62,7 @@ def interchange_and_stops(start_line,start,end_line,stop)
   interchange = find_interchange(start_line,end_line)[0]
   start_line = trim_lines(start_line, start, interchange, true) # check directions
   end_line = trim_lines(end_line, stop, interchange, false) # for both lines
-  total_stops = start_line.length + end_line.length
+  total_stops = start_line.length + end_line.length + 1
   return interchange, start_line, end_line, total_stops
 end
 
