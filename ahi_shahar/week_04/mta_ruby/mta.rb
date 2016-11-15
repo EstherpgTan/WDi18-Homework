@@ -43,7 +43,7 @@ def trim_lines (line, station, interchange, first_part_of_trip)
   new_line.shift
   return new_line
 end
-
+# call the user and ask him to input lines
 def call_user
   print "\n\tN-Line: #{line_n.join(", ")}\n"
   print "\n\tL-Line: #{line_l.join(", ")}\n"
@@ -81,7 +81,7 @@ while (travelling == 'Y')
   start, stop = call_user
   start_line,name_start_line = find_line(start)
   end_line,name_end_line = find_line(stop)
-  if start == "" || stop == ""
+  if name_start_line == "" || name_end_line == ""
     puts "\n\tInvalid Station"
   elsif start == stop
     puts "\n\tYou're an idiot"
