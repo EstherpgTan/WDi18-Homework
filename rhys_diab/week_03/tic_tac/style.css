@@ -1,0 +1,50 @@
+* {
+  color:blue;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 100px;
+  vertical-align: middle;
+
+}
+
+.buttonWrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  height: 200px;
+  width: 200px;
+  border-color: black;
+  display: inline-block;
+  margin: 0px 0px;
+  background-color: white;
+  vertical-align: top;
+}
+
+/* #circle {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background: blue;
+  border-color: red;
+  margin: auto;
+  text-align: center;
+}
+
+draft circle characteristics
+
+
+
+#cross {
+  content: "X";
+  font-size: 2em;
+  color: black;
+}
