@@ -95,7 +95,7 @@ def b_m_i
   print "what is your age? "
   age = gets.to_i
   age_bonus = ((age-15)/10).to_i #calculates BMI bonuses according to ages\
-  puts age_bonus
+  # puts age_bonus
   bmi_value = weight/(height*height) - age_bonus #calculates BMI with bonuses
 
   if bmi_value >= 19 && bmi_value <= 24.9
