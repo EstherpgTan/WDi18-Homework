@@ -85,12 +85,12 @@ while (travelling == 'Y')
     puts "\n\tInvalid Station"
   elsif start == stop
     puts "\n\tYou're an idiot"
-  elsif name_start_line != name_end_line
+  elsif name_start_line != name_end_line && start != "Union Square"
     interchange, start_line, end_line, total_stops = interchange_and_stops(start_line,start,end_line,stop)
     puts "\n \t You are traveling from #{start} on the #{name_start_line}, \n
     continue through #{start_line.join(", ")} and change trains to #{name_end_line} at: #{interchange}. \n
     continue your journey through #{end_line.join(", ")} all the way to #{stop}. \n
-    You have #{total_stops} on your journey, good luck.\n"
+    You have #{total_stops} stop(s) on your journey, good luck.\n"
   else
     start_line = end_line  if start == "Union Square"
     line = single_line_trip(start_line,start,stop)
