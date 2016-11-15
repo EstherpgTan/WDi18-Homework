@@ -4,8 +4,10 @@ var getPrimes = function(min, max) {
   for (var i = min; i <=max; i++) {
     range.push(i);
   }
+
   // We'll be storing our confirmed prime numbers in an array called primes. Obviously, this will start off as an empty array:
   var primes = [];
+
   // Iterating through all the numbers in the range array...
   for (var j = 0; j <= range.length; j++) {
     // ... store the j'th element in the range array in a variable called candidate...
@@ -29,5 +31,6 @@ var getPrimes = function(min, max) {
   // Once we've gone through all the numbers in the range array, return the primes array.
   return primes;
 };
+
 
 getPrimes(1,50);
