@@ -1,4 +1,5 @@
 require 'pry'
+require 'rainbow/ext/string' # Gives access to rainbow gem
 
 travelling = "Y"
 
@@ -45,9 +46,9 @@ def trim_lines (line, station, interchange, first_part_of_trip)
 end
 # call the user and ask him to input lines
 def call_user
-  print "\n\tN-Line: #{line_n.join(", ")}\n"
-  print "\n\tL-Line: #{line_l.join(", ")}\n"
-  print "\n\t6-Line: #{line_6.join(", ")}\n"
+  print "\n\tN-Line: #{line_n.join(", ").color(:indianred).bright}\n"
+  print "\n\tL-Line: #{line_l.join(", ").color(:indianred).bright}\n"
+  print "\n\t6-Line: #{line_6.join(", ").color(:indianred).bright}\n"
   print "\n\twhich station are you travelling from? "
     start = gets.chomp()
   print "\n\tWhich station are you traveling to? "
@@ -82,21 +83,21 @@ while (travelling == 'Y')
   start_line,name_start_line = find_line(start)
   end_line,name_end_line = find_line(stop)
   if name_start_line == "" || name_end_line == ""
-    puts "\n\tInvalid Station"
+    puts "\n\tInvalid Station".color(:red)
   elsif start == stop
-    puts "\n\tYou're an idiot"
+    puts "\n\tYou're an idiot".color(:red)
   elsif name_start_line != name_end_line && start != "Union Square"
     interchange, start_line, end_line, total_stops = interchange_and_stops(start_line,start,end_line,stop)
-    puts "\n \t You are traveling from #{start} on the #{name_start_line}, \n
-    continue through #{start_line.join(", ")} and change trains to #{name_end_line} at: #{interchange}. \n
-    continue your journey through #{end_line.join(", ")} all the way to #{stop}. \n
-    You have #{total_stops} stop(s) on your journey, good luck.\n"
+    puts "\n \t You are traveling from #{start.color(:green)} on the #{name_start_line.color(:green)}, \n
+    continue through #{Rainbow(start_line.join(", ")).underline} and change trains to #{name_end_line.color(:green)} at: #{interchange.color(:orange)}. \n
+    continue your journey through #{Rainbow(end_line.join(", ")).underline} all the way to #{stop.color(:green)}. \n
+    You have #{total_stops} stop(s) on your journey, good luck.\n".color(:white)
   else
     start_line = end_line  if start == "Union Square"
     line = single_line_trip(start_line,start,stop)
-    puts "\n \t You are traveling on line #{name_start_line} from #{start}. \n
-    contine through #{line.join(", ")} all the way to #{stop}.\n
-    You have #{line.length+1} stops on your way, good luck!\n"
+    puts "\n \t You are traveling on line #{name_start_line.color(:green)} from #{start.color(:green)}. \n
+    contine through #{Rainbow(line.join(", ")).underline} all the way to #{stop.color(:green)}.\n
+    You have #{line.length} stops on your way, good luck!\n".color(:white)
   end
     puts ""
     print "Would you like to plan another trip? Y/N "
