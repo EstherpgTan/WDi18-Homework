@@ -19,9 +19,15 @@ def find_interchange (start_line, end_line)
 end
 
 def find_line (station)
-  return line_6(),"6 Line" if line_6.include?(station)
-  return line_l(),"L Line" if line_l.include?(station)
-  return line_n(),"N Line" if line_n.include?(station)
+  if line_6.include?(station)
+    return line_6(),"6 Line"
+  elsif line_l.include?(station)
+    return line_l(),"L Line"
+  elsif line_n.include?(station)
+    return line_n(),"N Line"
+  else
+    return "",""
+  end
 end
 
 def trim_lines (line, station, interchange, first_part_of_trip)
@@ -39,13 +45,19 @@ def trim_lines (line, station, interchange, first_part_of_trip)
 end
 
 def call_user
-  print "which station are you travelling from? "
+  print "\n\tN-Line: #{line_n.join(", ")}\n"
+  print "\n\tL-Line: #{line_l.join(", ")}\n"
+  print "\n\t6-Line: #{line_6.join(", ")}\n"
+  print "\n\twhich station are you travelling from? "
     start = gets.chomp()
-  print "Which station are you traveling to? "
+  print "\n\tWhich station are you traveling to? "
     stop = gets.chomp()
-    return start,stop
+  return start,stop
 end
 
+# Find the interchange where the lines meet,
+# send the lines to the trimmed before and beyond the required stops
+# Counts how many stop left in the on the lines.
 def interchange_and_stops(start_line,start,end_line,stop)
   interchange = find_interchange(start_line,end_line)[0]
   start_line = trim_lines(start_line, start, interchange, true) # check directions
@@ -54,6 +66,7 @@ def interchange_and_stops(start_line,start,end_line,stop)
   return interchange, start_line, end_line, total_stops
 end
 
+# an
 def single_line_trip(start_line,start,stop)
   start_index = start_line.index(start)
   stop_index = start_line.index(stop)
@@ -66,17 +79,20 @@ end
 
 while (travelling == 'Y')
   start, stop = call_user
-
   start_line,name_start_line = find_line(start)
   end_line,name_end_line = find_line(stop)
-
-  if name_start_line != name_end_line
+  if start == "" || stop == ""
+    puts "\n\tInvalid Station"
+  elsif start == stop
+    puts "\n\tYou're an idiot"
+  elsif name_start_line != name_end_line
     interchange, start_line, end_line, total_stops = interchange_and_stops(start_line,start,end_line,stop)
     puts "\n \t You are traveling from #{start} on the #{name_start_line}, \n
     continue through #{start_line.join(", ")} and change trains to #{name_end_line} at: #{interchange}. \n
     continue your journey through #{end_line.join(", ")} all the way to #{stop}. \n
     You have #{total_stops} on your journey, good luck.\n"
   else
+    start_line = end_line  if start == "Union Square"
     line = single_line_trip(start_line,start,stop)
     puts "\n \t You are traveling on line #{name_start_line} from #{start}. \n
     contine through #{line.join(", ")} all the way to #{stop}.\n
