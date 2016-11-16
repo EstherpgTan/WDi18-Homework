@@ -1,14 +1,14 @@
 <h2><%= @movie["Title"] %></h2>
 <h3>
   <p>
-    Writer: <%= @movie["Writer"] %>, <br>
-    Director: <%= @movie["Director"] %> <br>
-    Actors: <%= @movie["Actors"] %>.  Runtime: <%= @movie["Runtime"] %>
-    Plot line:
-      <%= @movie["Plot"] %>
+    Writer: <%= @movie["Writer"] %>, <br><br>
+    Director: <%= @movie["Director"] %> <br><br>
+    Actors: <%= @movie["Actors"] %>. <br><br>
+    Runtime: <%= @movie["Runtime"] %><br><br>
+    Plot line:<%= @movie["Plot"] %><br>
   </p>
 </h3>
-<img class="poster src=<%= @movie["Poster"] %> alt="">
+<img class="poster" src=<%= @movie["Poster"] %> alt="">
 
 
 
