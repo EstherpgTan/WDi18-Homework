@@ -1,0 +1,6 @@
+<%  @myArr.each.with_index{ |n,i|
+  @newArr.push("<a class='img-responsive' href='/insight/#{@imArr[i]}'><img src='#{n}'></a><h5>#{@keyArr[i]}</h5>")}
+  %>
+
+<%= @newArr.join("")%>
+<a href=""></a>
