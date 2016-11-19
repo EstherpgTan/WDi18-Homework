@@ -217,14 +217,15 @@ a:hover {
   top: 70px;
   left: 58%;
   z-index: 20;
-  padding: 70px 0;
-  font-size: 45px;
+  padding: 5px 3px;
+  font-size: 15px;
   background-size: cover;
+  box-shadow: 6px 6px 15px lightslategray;
 }
 
 .container-right-adalytics-content {
   color: lightslategray;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .container-left-something {
