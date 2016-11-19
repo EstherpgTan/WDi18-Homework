@@ -1,16 +1,24 @@
 console.log( "Annoying cat" );
 
-var box = document.querySelector( "img" );
+var box = document.querySelector( "#cat" );
+var mindblown = document.querySelector( "#mind_blown" );
+var wiggly = document.querySelector( "#wiggly" );
+var body = document.querySelector( "body" );
+
+body.style.textAlign = "center";
 
 box.style.left = "0";
 box.style.right = "0";
 box.style.width = "100px";
 
+mindblown.style.display = "none";
+wiggly.style.display = "none";
+
 console.log( box.style.left, box.style.right );
 
 var moveForward = function () {
    var leftPos = parseInt( box.style.left );
-   leftPos += 40;
+   leftPos += 5;
    box.style.left = leftPos + "px";
 
    return leftPos;
@@ -18,7 +26,7 @@ var moveForward = function () {
 
 var moveBackward = function () {
   var leftPos = parseInt( box.style.left );
-  leftPos -= 40;
+  leftPos -= 5;
   box.style.left = leftPos + "px";
 
   return leftPos;
@@ -30,10 +38,19 @@ var movingAcross = 0;
 var moveAcross = function () {
   var leftPos = parseInt( box.style.left );
 
-  if ( movingAcross > 10 ) {
+  if ( movingAcross > 1 && ( window.innerWidth / 2 ) > leftPos ) {
     box.style.display = "none";
     console.log( "You did the magic!" );
     window.clearInterval( movingCat );
+    window.setTimeout( function () {
+      wiggly.style.display = "inline";
+      wiggly.style.textAlign = "center";
+    }, 1000 )
+    window.setTimeout( function () {
+      mindblown.style.display = "inline";
+      mindblown.style.textAlign = "center";
+      wiggly.style.display = "none";
+    }, 10000 )
   }
 
   if ( leftPos < ( window.innerWidth - parseInt( box.style.width ) ) && isMovingForward ) {
@@ -55,4 +72,4 @@ var moveAcross = function () {
 
 };
 
-var movingCat = window.setInterval( moveAcross, 100 );
+var movingCat = window.setInterval( moveAcross, 200 );
