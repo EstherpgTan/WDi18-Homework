@@ -1,0 +1,7 @@
+-- CREATE TABLE wonders (
+--   id INTEGER PRIMARY KEY AUTOINCREMENT,
+--   name TEXT,
+--   description TEXT,
+--   image TEXT,
+--   year_included INTEGER
+-- );

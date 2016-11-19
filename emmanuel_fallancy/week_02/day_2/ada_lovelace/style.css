@@ -5,12 +5,14 @@
 
 body {
   font-family: 'Bree Serif', serif;
+  background-color: gainsboro;
 }
 
 h2 {
   opacity: 0.3;
   z-index: 0;
 }
+
 
 .header {
   position: absolute;
@@ -171,7 +173,7 @@ a:hover {
   top: 70px;
   left: 58%;
   z-index: 20;
-  padding: 70px 0;
+  padding: 5px 3px;
   font-size: 45px;
   background-size: cover;
   box-shadow: 6px 6px 15px lightslategray;
@@ -179,7 +181,7 @@ a:hover {
 
 .container-right-life-content {
   color: lightslategray;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .container-left-adalytics {
@@ -258,7 +260,7 @@ a:hover {
   top: 70px;
   left: 58%;
   z-index: 20;
-  padding: 70px 0;
+  padding: 5px 2px;
   font-size: 45px;
   background-size: cover;
   box-shadow: 6px 6px 15px lightslategray;
@@ -266,5 +268,5 @@ a:hover {
 
 .container-right-something-content {
   color: lightslategray;
-  font-size: 20px;
+  font-size: 14px;
 }

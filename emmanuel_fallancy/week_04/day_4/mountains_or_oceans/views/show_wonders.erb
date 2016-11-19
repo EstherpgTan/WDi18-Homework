@@ -1,0 +1,6 @@
+<% @wonders.each do | wonder | %>
+<div>
+  <p>Name: <a href="/wonders/<%= wonder[ "id" ] %>"><%= wonder[ "name" ] %></a></p>
+  <p>Description: <%= wonder[ "description" ] %></p>
+</div>
+<% end %>

@@ -1,0 +1,17 @@
+body {
+  background-color: gainsboro;
+  text-align: center;
+  font-family: monospace;
+}
+
+li {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  height: 200px;
+  width: 300px;
+}
