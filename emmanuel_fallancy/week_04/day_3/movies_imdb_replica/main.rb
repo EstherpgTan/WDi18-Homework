@@ -33,3 +33,11 @@ get "/result" do
   # Display the result
 
 end
+
+get "/about" do
+  erb( :about )
+end
+
+get "/contact_us" do
+  erb( :contact_us )
+end

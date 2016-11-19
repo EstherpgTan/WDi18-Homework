@@ -5,22 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>IMDB Replica</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
   <!-- Header part for navigation -->
   <header>
     <div>
-      <ul>
-        <li><a href="/search">Search movies...</a></li>
-      </ul>
+      <a href="/">Home</a> |
+      <a href="/about">About</a> |
+      <a href="/search">Search movies...</a> |
+      <a href="/contact_us">Contact Us</a>
     </div>
   </header>
+
+  <h1>The Replica of IMDB</h1>
 
   <content>
     <%= yield %>
   </content>
 
-  <footer>Copyrighted to none</footer>
+  <br />
+  <footer>&copy; Copyrighted to none</footer>
 </body>
 </html>

@@ -1,0 +1,40 @@
+body {
+  background-color: salmon;
+  text-align: center;
+  font-family: Arial, serif;
+}
+
+#poster {
+  border-radius: 5px;
+}
+
+header {
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-size: 15pt;
+  font-family: monospace;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  width: 100%;
+}
