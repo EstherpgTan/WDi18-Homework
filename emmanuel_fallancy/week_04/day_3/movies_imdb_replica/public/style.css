@@ -11,14 +11,15 @@ body {
 header {
   padding: 10px;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
 
 a:hover {
-  font-size: 15pt;
-  font-family: monospace;
+  color: white;
+  
 }
 
 ul {
@@ -30,11 +31,10 @@ li {
   margin: 0;
 }
 
-footer {
-  position: fixed;
-  bottom: 1px;
-  padding: 0;
-  margin: 0;
-  overflow: auto;
-  width: 100%;
+#img_result, #result {
+  display: inline-block;
+}
+#img_result {
+  width: 200px;
+  height: 300px;
 }

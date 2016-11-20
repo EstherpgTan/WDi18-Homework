@@ -1,4 +1,9 @@
-<h2><%= @movie_name %></h2>
-<br />
-<img id="poster" src="<%= @poster_img %>" alt="<%= @movie_name %>">
-<p> <%= @description %></p>
+<% @movies[ "Search" ].each do | movie | %>
+<div id="result">
+  <img src="<%= movie[ "Poster" ] %>" alt=" <%= movie[ "Title" ] %>" id="img_result">
+  <div>
+    <p><b><a href="/show_movie_details/<%= movie[ 'imdbID' ] %>"><%= movie[ "Title" ] %></a></b></p>
+    <p>Year: <%= movie[ "Year" ] %> | Type: <%= movie[ "Type" ] %></p>
+  </div>
+</div>
+<% end %>
