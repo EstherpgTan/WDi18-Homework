@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+  font-size: 1.1em;
+  color: #404040;
+  font-family: sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: tomato;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px;
+}
