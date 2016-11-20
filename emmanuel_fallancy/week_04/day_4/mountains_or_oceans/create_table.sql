@@ -1,7 +1,8 @@
--- CREATE TABLE wonders (
---   id INTEGER PRIMARY KEY AUTOINCREMENT,
---   name TEXT,
---   description TEXT,
---   image TEXT,
---   year_included INTEGER
--- );
+CREATE TABLE mountains (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT,
+  description TEXT,
+  location TEXT,
+  image TEXT,
+  elevation INTEGER
+);
