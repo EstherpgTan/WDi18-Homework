@@ -44,7 +44,7 @@ def trim_lines (line, station, interchange, first_part_of_trip)
   new_line.shift
   return new_line
 end
-# call the user and ask him to input lines
+# call the user and ask him to input his stops
 def call_user
   print "\n\tN-Line: #{line_n.join(", ").color(:indianred).bright}\n"
   print "\n\tL-Line: #{line_l.join(", ").color(:indianred).bright}\n"
@@ -91,15 +91,14 @@ while (travelling == 'Y')
     puts "\n \t You are traveling from #{start.color(:green)} on the #{name_start_line.color(:green)}, \n
     continue through #{Rainbow(start_line.join(", ")).underline} and change trains to #{name_end_line.color(:green)} at: #{interchange.color(:orange)}. \n
     continue your journey through #{Rainbow(end_line.join(", ")).underline} all the way to #{stop.color(:green)}. \n
-    You have #{total_stops} stop(s) on your journey, good luck.\n".color(:white)
+    You have #{total_stops} stop(s) on your journey, good luck.\n"
   else
     start_line = end_line  if start == "Union Square"
     line = single_line_trip(start_line,start,stop)
     puts "\n \t You are traveling on line #{name_start_line.color(:green)} from #{start.color(:green)}. \n
     contine through #{Rainbow(line.join(", ")).underline} all the way to #{stop.color(:green)}.\n
-    You have #{line.length} stops on your way, good luck!\n".color(:white)
+    You have #{line.length} stops on your way, good luck!\n"
   end
-    puts ""
-    print "Would you like to plan another trip? Y/N "
+  print "Would you like to plan another trip? Y/N "
   travelling = gets.chomp()
 end

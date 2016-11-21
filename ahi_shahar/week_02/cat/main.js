@@ -29,8 +29,8 @@ var cat = document.querySelector("img");
 
 var escape = function () {
   var oldCoords = cat.getAttribute("class").substring(4);
-  var random = parseInt(Math.random()*5);
-  console.log(oldCoords);
+  var random = parseInt(Math.random()*7);
+  // console.log(oldCoords);
   cat.classList.toggle(oldCoords);
   cat.classList.toggle("esc"+random);
 };
@@ -42,7 +42,7 @@ var getClose = function () {
   if (Number(cat.style.width.substr(0,3)) > 500) {
     var body = document.querySelector("body");
     body.style.backgroundImage = "url(https://media.giphy.com/media/MZ9ojQywavtXq/giphy.gif)";
-    body.style.backgroundSize = "cover";
+    body.style.backgroundSize = "100%";
     console.log(body);
     cat.style.display = "none";
   }

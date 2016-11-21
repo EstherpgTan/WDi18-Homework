@@ -20,6 +20,7 @@ a{
 }
 
 img {
+  margin: 0 auto;
   height: 400px;
   width: 400px;
 }
