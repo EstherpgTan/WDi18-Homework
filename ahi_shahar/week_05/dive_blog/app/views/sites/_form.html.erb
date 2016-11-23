@@ -1,0 +1,29 @@
+<!-- Secure, reusable, assists with prefilling values -->
+<%= form_for @site do |f| %>
+  <p>
+    <%= f.label :site_name %>
+    <%= f.text_field :name, :required => true %>
+  </p>
+  <p>
+    <%= f.label :location %>
+    <%= f.text_field :location, :required => true %>
+  </p>
+  <p>
+    <%= f.label :preferred_tide %>
+    <%= f.text_field :tide, :required => true %>
+  </p>
+  <p>
+    <%= f.label :training_level %>
+    <%= f.text_field :level, :required => true %>
+  </p>
+  <p>
+    <%= f.label :maximum_depth %>
+    <%= f.text_field :depth, :required => true %>
+  </p>
+  <p>
+    <%= f.label :image %>
+    <%= f.url_field :image, :required => true %>
+  </p>
+
+  <%= f.submit %>
+<% end %>
