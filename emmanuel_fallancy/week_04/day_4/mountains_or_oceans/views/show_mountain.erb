@@ -1,0 +1,6 @@
+<h2><%= @mountain[ "name" ] %></h2>
+<p>Description: <%= @mountain[ "description" ]%></p>
+<p>Location: <%= @mountain[ "location" ] %></p>
+<p>Height: <%= @mountain[ "elevation" ] %></p>
+<p><img src="<%= @mountain[ "image" ] %>" alt="<%= @mountain[ "name" ] %>"></p>
+<p><a href="/mountains">Back to mountains</a> | <a href="/mountains/<%= @mountain[ "id" ] %>/update">Edit mountain</a> | <a href="/mountains/<%= @mountain[ "id" ] %>/delete">Delete this mountain</a></p>
