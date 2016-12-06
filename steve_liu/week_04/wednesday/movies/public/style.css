@@ -1,0 +1,20 @@
+body {
+  text-align:center;
+  font-family:monospace;
+  font-size: 18px;
+  background-color: #7FDBFF;
+}
+
+.button {
+  background-color: rebeccapurple;
+  border: 1px black solid;
+  font-family: fantasy;
+  display:block;
+  width: 10%;
+  margin: 0 auto;
+  color:white;
+  text-decoration: none;
+}
+.button:hover {
+  cursor:pointer;
+}
