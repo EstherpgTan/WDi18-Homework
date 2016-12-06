@@ -1,0 +1,14 @@
+<h3>A list of all wines</h3>
+
+<% @all_wines.each do |the_wine| %>
+  <ul>
+    <li><%= the_wine["id"] %></li>
+    <li>
+      <a href="/wines_pick/<%= the_wine["id"] %>">
+        <%= the_wine["grape"] %>
+      </a>
+    </li>
+    <li><%= the_wine["year"] %></li>
+    <li><%= the_wine["region"] %></li>
+  </ul>
+<% end %>
