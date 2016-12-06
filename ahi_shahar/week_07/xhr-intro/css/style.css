@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+  background-color: rgba(0,0,0,0.7);
+  background-image: url("http://cdn.mysitemyway.com/etc-mysitemyway/backgrounds/legacy-previews/backgrounds/watercolor-grunge/watercolor-grunge-000059-blue-green-lilac.jpg");
+  background-size: cover;
+  margin: 0 auto;
+}
+h1 {
+  color: #ff00de;
+  font-family: monospace;
+  font-size: 50px;
+  text-shadow: 0 0 10px black, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+.output{
+  min-height: 600px;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 20px;
+  border: 0.5px outset lightslategrey;
+  padding-top: 20px;
+  box-shadow: 15px 15px 15px rgba(30,30,30,0.6);
+}
+.output div {
+  cursor: pointer;
+}
+hr {
+  width: 300px;
+}
+img {
+  max-width: 500px;
+  max-height: 450px;
+}
