@@ -1,0 +1,289 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: -16px 0 0 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #FFFFFF;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #000000;
+  color: #FFFFFF;
+  display: block;
+  top: 0;
+}
+
+ul {
+  list-style-type: none;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  left: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.weblinks {
+  color: #000;
+  text-align: left;
+}
+
+.links a {
+  color: #000;
+  display:block;;
+}
+
+.links li {
+  display: block;
+  padding: 10px;
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  display: inline;
+}
+
+li a:hover {
+  color: #9dbdd1;
+}
+
+header {
+  width: 100%;
+  height: 420px;
+  background-image: url("images/the-larry-wall.jpg");
+  background-size: cover;
+  background-position: 70% 50%;
+  display: block;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+
+.banner h1 {
+  padding-top: 60px;
+  color: #faf3ed;
+  font-size: 2.6em;
+}
+
+.our-leader {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0 10px 40px 10px;
+  overflow: auto;
+  margin: 0 60px;
+}
+
+div.column {
+  width: 45%;
+  margin: 60px 20px 40px 20px;
+  background-color: #FFF;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+}
+
+.column img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #FFF;
+  border-radius: 20px;
+}
+
+button {
+  height: 40px;
+  max-width: 180px;
+  padding: 0 15px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+  color: #FFF;
+  outline: none;
+  font-size: 12pt;
+  transition: all 0.5s;
+}
+
+button a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+button:hover {
+  text-transform: uppercase;
+}
+
+.readMore {
+  height: 40px;
+  width: 280px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+  color: #FFF;
+  outline: none;
+  font-size: 12pt;
+  transition: all 0.5s;
+}
+
+.readMore a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+.readMore:hover {
+  text-transform: uppercase;
+}
+
+.our-beliefs {
+  text-align: center;
+  margin: -16px 0px;
+  background-color: #9dbdd1;
+}
+
+.heading {
+  height: 80px;
+  background-color: #9dbdd1;
+  padding-top: 15px;
+}
+
+.larry {
+  background-color: #FFF;
+  text-align: center;
+  height: 45px;
+}
+
+.more-larry {
+  width: 85%;
+  border: solid 2px #9dbdd1;
+  border-radius: 180px;
+}
+
+.fa {
+  font-size: 40pt;
+}
+
+h2 {
+  font-size: 22pt;
+}
+
+h3 {
+  font-size: 18pt;
+}
+
+h4 {
+  font-size: 16pt;
+}
+
+table {
+  width: 90%;
+  margin: 5px;
+  text-align: center;
+  background-color: #c7e2f3;
+  /*transition: 2s;*/
+}
+
+tr {
+  transition: all 2s;
+}
+
+td {
+  width: 33%;
+  padding: 20px;
+}
+
+td:hover {
+  background-color: #9dbdd1;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.quote {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.colgroup {
+  width: 100%;
+  /*margin: 0 80px;*/
+  background-color: #9dbdd1;
+  padding: 0 60px 0 60px;
+  overflow: auto;
+}
+
+.col {
+  width: 33%;
+  padding: 30px 40px 30px 40px;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+}
+
+.perl {
+  height: 40px;
+  width: 360px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+  color: #FFF;
+  outline: none;
+  font-size: 12pt;
+  transition: all 0.5s;
+}
+
+button.perl:hover {
+  color: #9dbdd1;
+}
+
+.perl a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+.perl:hover {
+  text-transform: uppercase;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  color: #FFF;
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer p {
+  font-size: 9pt;
+  padding-top: 30px;;
+}
+
+/*Youtube Video*/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

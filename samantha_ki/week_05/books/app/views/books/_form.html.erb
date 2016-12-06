@@ -1,0 +1,24 @@
+<%= form_for @book do |f| %>
+<p>
+  <%= f.label :title %>
+  <%= f.text_field :title, :required => true %>
+
+  <p>
+    <%= f.label :language %>
+    <%= f.text_field :language, :required => true %>
+  </p>
+  <p>
+    <%= f.label :genre %>
+    <%= f.text_field :genre, :required => true %>
+  </p>
+  <p>
+    <%= f.label "Year First Published" %> <!-- Decided to change this value last minute - oops -->
+    <%= f.text_field :pages, :required => true %>
+  </p>
+  <p>
+    <%= f.label :image %>
+    <%= f.url_field :image, :required => true %>
+  </p>
+
+  <%= f.submit %>
+<% end %>

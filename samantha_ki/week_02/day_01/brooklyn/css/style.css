@@ -84,3 +84,7 @@ img.column {
 div.footer {
 margin: 0 120px 30px 60px;
 }
+
+div.col1 {
+  padding: 20px;
+}
