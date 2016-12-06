@@ -1,0 +1,40 @@
+body {
+  background-color: salmon;
+  text-align: center;
+  font-family: Arial, serif;
+}
+
+#poster {
+  border-radius: 5px;
+}
+
+header {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+  
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+#img_result, #result {
+  display: inline-block;
+}
+#img_result {
+  width: 200px;
+  height: 300px;
+}

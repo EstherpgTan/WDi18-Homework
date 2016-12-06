@@ -1,0 +1,13 @@
+<h2>You <%= @result %></h2>
+<p>User: <%= @user.capitalize %></p>
+<p>Opponent: <%= @server.capitalize %></p>
+<% if @result == "win" %>
+<img src="http://i.giphy.com/l3E6z6QxD2uKoRTDq.gif" alt="win">
+<% elsif @result == "lose" %>
+<img src="http://i.giphy.com/3o6EhC6Z2KRTE0Xvtm.gif" alt="lose">
+<% else %>
+<img src="http://i.giphy.com/Am7rgcdDTF9Cw.gif" alt="draw">
+<% end %>
+<br />
+<br />
+<a href="/games/rock_paper_scissors">Play again</a>

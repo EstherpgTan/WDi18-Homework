@@ -1,0 +1,97 @@
+/* The tic tac toe clothes */
+
+body {
+  font-family: monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: scroll;
+  display: none;
+  z-index: 100;
+}
+
+.overlay-image-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.show_winner_msg {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.board {
+  width: 520px;
+  height: 520px;
+  overflow: auto;
+
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.box {
+  border: 1px solid black;
+  width: 160px;
+  height: 160px;
+  display: inline-block;
+  position: relative;
+  padding: 0px;
+  margin: 2px auto;
+  border-radius: 5px;
+  background-size: cover;
+  background-color: white;
+}
+
+.scoreboard {
+
+  overflow: auto;
+  width: 100%;
+}
+
+.opponentscoreboard, .userscoreboard, .board {
+  float: left;
+  margin: auto 45px;
+}
+
+.trump_clinton {
+  width: 200px;
+  height: 250px;
+}
+.character {
+  width: 220px;
+  height: 330px;
+
+  padding: 2px 2px;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+.character_box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 2px 2px;
+  background-color: white;
+}
+
+.character_box img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
