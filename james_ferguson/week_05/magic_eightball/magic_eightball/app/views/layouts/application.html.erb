@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MagicEightball</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<h1> Magic Eightball </h1>
+<!-- <nav>
+  <a href="/eightball/question"></a>
+</nav> -->
+
+<hr>
+<%= yield %>
+<hr>
+
+<img src="https://cdn.theatlantic.com/assets/media/img/mt/2014/04/2311427946_ba6af93f9f_b/lead_large.jpg" alt="Eightball">
+
+
+</body>
+</html>

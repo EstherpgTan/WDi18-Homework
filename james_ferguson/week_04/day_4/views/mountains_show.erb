@@ -1,0 +1,19 @@
+<h3>This is the profile page of our mountains <%= @id%>
+</h3>
+
+<p>ID: <%= @mountain["id"]%></p>
+<p>Name: <%= @mountain["name"]%></p>
+<p>Country: <%= @mountain["country"]%></p>
+<p>
+  Image:
+  <img src="<%= @mountain["image"]%>">
+</p>
+
+<div class="controls">
+  <a href="/mountains/<%= @mountain["id"]%>/delete">
+    Delete this mountain
+  </a> |
+  <a href="/mountains/<%= @mountain["id"]%>/edit">
+    Edit this mountain
+  </a>
+</div>

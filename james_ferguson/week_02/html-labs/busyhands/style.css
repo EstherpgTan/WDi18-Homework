@@ -1,0 +1,32 @@
+body{
+  margin: 0 auto;
+}
+
+
+nav {
+  background-color: black;
+  height: 80px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding-top: 100px;
+}
+
+.home-boxes {
+  background-color: black;
+  padding: 5px;
+  width: auto;
+  overflow: auto; /*wraps boarder*/
+
+}
+
+.home-box {
+  width: 20%;
+  height: 100px;
+  background-color: white;
+  float: left;
+  border: 2px solid grey;
+  box-sizing: border-box;
+}
