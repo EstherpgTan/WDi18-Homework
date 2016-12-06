@@ -1,0 +1,15 @@
+<h3>This should show all of our oceans</h3>
+
+<% @all_oceans.each do |ocean| %>
+  <ul>
+    <li><%= ocean["id"] %></li>
+    <li>
+      <a href="/oceans/<%= ocean["id"] %>">
+      <%= ocean["name"] %>
+      </a>
+    </li>
+    <li><img class="image" src="<%= ocean["image"] %>" alt=""></li>
+    <li><%= ocean["description"] %></li>
+  </ul>
+
+<% end %>

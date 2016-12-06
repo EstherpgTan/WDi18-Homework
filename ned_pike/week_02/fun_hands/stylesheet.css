@@ -1,0 +1,103 @@
+body, html {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  color: rgb(193, 191, 179);
+  background-color: rgb(227, 227, 227);
+  background-image: url("bg_body.jpg");
+}
+
+.image {
+  height: 55em;
+  background-color: rgba(39, 35, 35, 0.08);
+  width: 100%;
+  padding-left: 0px;
+  margin-left: -33%;
+  padding-right: 10%;
+  margin-right: 14%;
+  margin-top: -70%;
+  width: 165%;
+}
+
+p.writing {
+  margin-left: 20px;
+}
+
+.navbar {
+  background: black;
+}
+ul {
+  padding: 0;
+  padding-left: 20%;
+  margin: 0;
+  line-height: 70px;
+}
+.links {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.container {
+  padding: 0 10%;
+}
+
+header {
+  overflow: auto;
+}
+
+.move {
+  float: right;
+  margin-right: 20%;
+}
+
+.busy {
+  width: 100%;
+box-shadow: 3px 8px 16px 5px #6c6c6c;
+}
+
+.button-blurb {
+  margin-bottom: 65px;
+  margin-left: -29px;
+}
+
+.logo {
+  /*margin-left:10%;*/
+}
+
+.social {
+  margin-left: 43px;
+  position: absolute;
+  clip: rect(57px,235px,118px,8px);
+  margin-top: -60px;
+  /*margin-left: 29%;*/
+}
+
+
+.quote {
+  height: 100px;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-top: 27px;
+}
+
+
+
+div.writing {
+  display: inline-block;
+  width: 79%;
+  line-height: 36px;
+}
+
+div.button {
+  display: inline-block;
+  width: 20%;
+}
+
+
+
+footer {
+  background: black;
+  height:22em;
+}

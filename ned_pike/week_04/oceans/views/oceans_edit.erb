@@ -1,0 +1,23 @@
+<h3>This should edit the ocean of <%= @id %></h3>
+
+<form action="/oceans/<%= @id %>" method="POST">
+
+  <p>
+    <label for="">Name:</label>
+    <input value="<%= @ocean["name"] %>" type="text" placeholder="species" name="name">
+  </p>
+  <p>
+    <label for="">Image:</label>
+    <input value="<%= @ocean["image"] %>" type="text" placeholder="Image" name="image">
+  </p>
+  <p>
+    <label for="">Description</label>
+    <input value="<%= @ocean["description"] %>" type="text" placeholder="Description" name="description">
+  </p>
+  <p>
+    <label for="">Size</label>
+    <input value="<%= @ocean["height"] %>" type="text" placeholder="size" name="height">
+  </p>
+  <input type="submit" value="Update ocean">
+
+</form>

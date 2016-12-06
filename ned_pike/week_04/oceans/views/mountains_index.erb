@@ -1,0 +1,10 @@
+<% @all_mountains.each do |mountain| %>
+
+  <ul>
+    <li><a href="/mountains/<%= mountain["id"] %>"><%= mountain["id"] %></a></li>
+    <li><a href="/mountains/<%= mountain["id"] %>"><%= mountain["name"] %></a></li>
+    <li><%= mountain["height"] %></li>
+    <li><%= mountain["description"] %></li>
+  </ul>
+
+<% end %>
