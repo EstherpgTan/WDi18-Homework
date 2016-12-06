@@ -1,0 +1,121 @@
+*{
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+.body{
+  min-height: 1000px;
+}
+
+header{
+  width:auto;
+  /*heigth:auto;*/
+  top:0;
+  left:0;
+  position:relative;
+  background-image: url(img/header.png);
+  background-size: cover;
+  background-position: center;
+  display:block;
+  height:450px;
+  overflow: auto;
+}
+
+.quotes{
+  position: relative;
+  /*top:33%;*/
+  /*left:3%;*/
+  width:80%;
+  text-align:center;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 48px;
+  display: block;
+  margin: 5% 10%;
+}
+
+
+#year{
+  position: absolute;
+  top:54%;
+  left:28%;
+  width:100%;
+  /*text-align:center;*/
+  color:ghostwhite;
+}
+
+
+header h1{
+  position: absolute;
+  top:20%;
+  left:15%;
+  width:100%;
+  /*text-align:center;*/
+  color:ghostwhite;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+
+#intro{
+  position: absolute;
+    top:38%;
+    left:18%;
+    text-align:center;
+    width: 27%;
+    color:ghostwhite;
+}
+
+
+
+nav{
+  display: block;
+  /*min-height:350px;*/
+  position: relative;
+
+  background-color: black;
+  color: white;
+}
+
+#early-life, #achievements, #fun-facts{
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 32px;
+  padding-top: 20px;
+}
+
+.about{
+  font-size: 65px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+}
+
+#short-intro{
+  margin: 20px;
+  display: block;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.chronology{
+  margin: 20px;
+}
+
+
+.year{
+  font-weight: 800;
+}
+
+.mid{
+  padding: 0 15%;
+  background-color: #E8E8E8;
+}

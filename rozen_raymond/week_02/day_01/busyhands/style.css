@@ -1,0 +1,152 @@
+body{
+  background-image: url(images/bg_body.jpg);
+  box-sizing: border-box;
+
+}
+
+.container{
+  width:1100px;
+  margin:auto;
+
+  background-image: url(images/bg_wrapper.png);
+  display: block;
+  overflow: auto;
+}
+
+nav{
+  padding-left: 100px;
+}
+
+nav a{
+  color:white;
+  float:left;
+  text-align: center;
+  height: 100%;
+  font-size: 15px;
+  padding: 30px;
+  text-decoration: none;
+}
+
+nav a:hover{
+  background-image: url(images/bg_nav_rollover.png);
+}
+
+.content{
+  width: 80%;
+  margin: auto;
+  padding:30px 60px 60px 60px;
+  overflow:auto;
+  display: block;
+}
+
+.logo{
+  float:left;
+  padding-bottom: 10px;
+}
+
+.social-media{
+  padding-left: 100px;
+  padding-bottom: 10px;
+  float:right;
+  overflow: auto;
+}
+
+div{
+  display: block;
+}
+
+#linkedin{
+  width: 60px;
+  height:60px;
+  float:right;
+  background-image:url(images/linkedin_grey-01.png);
+}
+
+#linkedin:hover{
+  background-image: url(images/linkedin_color-01.png);
+}
+
+#twitter{
+  width: 60px;
+  height:60px;
+  float:right;
+  background-image:url(images/twitter_grey-01.png);
+}
+
+#twitter:hover{
+  background-image: url(images/twitter_color-01.png);
+}
+
+#facebook{
+  width: 60px;
+  height:60px;
+  float:right;
+  background-image:url(images/facebook_grey-01.png);
+}
+
+#facebook:hover{
+  background-image: url(images/facebook_color-01.png);
+}
+
+#rss {
+  width: 60px;
+  height: 60px;
+  float:right;
+  background-image: url(images/rss_grey-01.png);
+}
+
+#rss:hover{
+  background-image: url(images/rss_color-01.png);
+}
+
+#banner{
+width:880px;
+height:400px;
+margin:auto;
+box-shadow: 0px 10px 5px #888888;
+}
+
+.midContent{
+  width: 80%;
+  margin: auto;
+  overflow:auto;
+  display: block;
+  height: 100px;
+  border: 2px solid lightgrey;
+  border-style:groove;
+}
+
+.left{
+  width: 70%;
+  float:left;
+  padding: 5px 20px;
+}
+
+.right{
+  float:right;
+
+}
+
+#blurb{
+  padding: 25px 10px 25px 5px;
+}
+
+.columns{
+  width: 80%;
+  margin: auto;
+  padding:30px 60px 60px 60px;
+  overflow:auto;
+  display: block;
+
+}
+
+.first, .second, .third{
+  margin: 0px auto;
+  width: 31%;
+  float:left;
+  padding:10px;
+}
+
+#columnPicOne, #columnPicTwo, #columnPicThree{
+  width: 100%;
+}

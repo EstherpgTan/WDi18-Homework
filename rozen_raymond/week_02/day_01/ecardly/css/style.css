@@ -1,0 +1,109 @@
+/*
+Project Name: Ecard.ly
+Client: General Assembly
+Author: Christopher Castig | @castig
+Developer @GA in NYC
+*/
+
+/*Background Color: #d6d6d6
+Text Color: #000000
+Link Color: #cc6633*/
+
+.body{
+  background-color: #d6d6d6;
+  color:#000000;
+}
+
+.backgroundOne{
+  width:50%;
+  float:left;
+}
+
+.backgroundTwo{
+  width:50%;
+  float:left;
+}
+
+.a
+{
+  color:#cc6633;
+}
+
+/*Container Width: 940px
+Left Columm (#main): 640px
+Right Column (#sidebar): 280px*/
+
+h1{
+  text-align: center;
+}
+
+.logo
+{
+  align-content: center;
+  margin: auto;
+  width: 20%;
+}
+.container
+{
+  margin: 20px auto;
+  background-color:yellow;
+  width:940px;
+}
+
+h2{
+  text-align: left;
+}
+
+.title{
+  display: block;
+  font-size: 12px;
+  text-align: left;
+}
+
+p{
+  font-size: 12px;
+  text-align: center;
+}
+
+.columns{
+  width:940px;
+  display: inline-block;
+}
+
+.cardColumn{
+    margin: 10px auto;
+}
+
+.cardImage .cardContent{
+  width:50%;
+  display: inline-block;
+  float:left;
+}
+
+.archive, .blogroll
+{
+  display: inline-block;
+  font-size: 12px;
+  float:left;
+}
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
