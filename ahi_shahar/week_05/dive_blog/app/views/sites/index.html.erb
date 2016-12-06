@@ -1,0 +1,17 @@
+<h3>Dive Sites</h3>
+
+<ul>
+<% @sites.each do |site| %>
+  <li>
+    <%= image_tag( site.image, :class => "thumbnail" ) %>
+    <ul>
+      <!-- <li><%= site.to_json %></li> -->
+      <li>
+        Name: <%= link_to(site.name, "/sites/#{site.id}") %>   |   Number: <%= link_to(site.id, "/sites/#{site.id}") %>
+      </li>
+
+    </ul>
+  </li>
+  <br>
+<% end %>
+</ul>

@@ -1,0 +1,11 @@
+<h3>Many Many divings</h3>
+<br>
+<% @all_dives.each do |dive| %>
+  <ul>
+    <li>
+      <a href="/dives/<%= dive["id"] %>">
+        <%= dive["description"] %>
+      </a>
+    </li>
+  </ul>
+<% end %>

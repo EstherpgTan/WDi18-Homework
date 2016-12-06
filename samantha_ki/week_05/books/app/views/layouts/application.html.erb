@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Books</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1>All About Books</h1>
+
+<nav>
+  <%= link_to "Home", "/"%> |
+  <%= link_to "About", "/about"%> |
+  <%= link_to "Authors", authors_path%> |
+  <%= link_to "Submit Author", new_author_path()%> |
+  <%= link_to "Books", books_path()%> |
+  <%= link_to "Submit Books", new_book_path()%>
+</nav>
+
+<hr>
+<%= yield %>
+<hr>
+
+</body>
+</html>

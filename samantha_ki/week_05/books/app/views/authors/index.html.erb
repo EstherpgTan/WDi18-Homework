@@ -1,0 +1,17 @@
+<h3>This will show all authors...</h3>
+
+<ul>
+<% @authors.each do |a| %>
+  <li>
+
+  <%= link_to(image_tag(a.image, :class => "thumbnail"), "/authors/#{a.id}") %>
+  <ul>
+
+    <li><span>Name:</span> <%= link_to(a.name, "/authors/#{a.id}") %></li>
+    <li><span>Nationality:</span> <%= a.nationality %></li>
+    <li><span>Date of Birth:</span> <%= a.dob %></li>
+    </ul>
+  </li>
+</ul>
+</p>
+<% end %>

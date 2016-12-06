@@ -1,0 +1,14 @@
+<h3><%= @author.name %></h3>
+
+<%= image_tag @author.image %>
+
+<ul>
+  <li><span>Nationality:</span> <%= @author.nationality %></li>
+  <li><span>Date of Birth:</span> <%= @author.dob %></li>
+</ul>
+
+<div class="controls">
+
+  <%= link_to "Edit Author", "/authors/#{@author.id}/edit" %> |
+  <%= link_to "Delete Author", "/authors/#{@author.id}", :method => :delete, :data => { :confirm => "Are you sure?"} %>
+</div>

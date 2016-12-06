@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DiveBlog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+
+  <h1>Static TV</h1>
+
+  <nav>
+    <%= link_to "Home", "/"%>  |
+    <%= link_to "About", "/about"%>  |
+    <%= link_to "Dive Sites", "/sites"%>  |
+    <%= link_to "Create Dive Site", "/sites/new"%>  |
+    <%= link_to "Photos", photos_path()%>  |
+    <%= link_to "Add new photo", new_photo_path()%>  |
+  </nav>
+
+  <hr>
+    <%= yield %>
+  <hr>
+
+</div>
+</body>
+</html>

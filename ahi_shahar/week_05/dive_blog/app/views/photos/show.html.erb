@@ -1,0 +1,16 @@
+<h3><%= @photo.id %></h3>
+
+<%= image_tag( @photo.image, :class => "mainpic"  ) %>
+
+<p>Photographer: <%= @photo.photographer %></p>
+
+<p>Year: <%= @photo.year %></p>
+
+<p>Description: <%= @photo.description %></p>
+
+<p>Site ID : <%= @photo.site_id %></p>
+
+<div class="controls">
+  <%= link_to "Edit Photo", edit_photo_path(@photo) %>    |
+  <%= link_to "Delete Photo", photo_path(@photo), :method => :delete, :data => { :confirm => "Are you sure?" } %>
+</div>

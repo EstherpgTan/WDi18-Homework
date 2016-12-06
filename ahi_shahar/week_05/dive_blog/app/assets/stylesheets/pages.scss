@@ -1,0 +1,37 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: monospace;
+  text-align: center;
+  background-color: rgba(0, 0, 255, 0.4);
+}
+
+h1, h2, h3 {
+  font-family: fantasy;
+}
+
+nav a {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav a:hover{
+  background: radial-gradient(rgba(0, 0, 0, 0.8) 55%, rgba(0, 0, 255, 0.01) 45%); /* Standard syntax */
+  color: ghostwhite;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}

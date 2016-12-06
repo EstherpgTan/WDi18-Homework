@@ -1,0 +1,21 @@
+<h3>Any typos to fix on picture #<%= @id %>? maybe a broken link?</h3>
+
+<form action="/dives/<%= @id %>" method="POST">
+    <p>
+        <label for="">Location</label>
+        <input type="text" name="location" placeholder="Location" value="<%= @dive["location"] %>">
+    </p>
+    <p>
+        <label for="">Photographer</label>
+        <input type="text" name="photographer" placeholder="Photographer" value="<%= @dive["photographer"] %>">
+    </p>
+    <p>
+        <label for="">Description</label>
+        <input type="text" name="description" placeholder="Description" value="<%= @dive["description"] %>">
+    </p>
+    <p>
+        <label for="">Image</label>
+        <input type="text" name="image" placeholder="Image" value="<%= @dive["image"] %>">
+    </p>
+    <input type="submit" value="Update details">
+</form>
