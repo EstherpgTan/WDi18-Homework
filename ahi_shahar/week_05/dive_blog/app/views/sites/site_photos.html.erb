@@ -1,0 +1,17 @@
+<h3><%#= @site.name %> Photos:</h3>
+
+<ul>
+<% @photos.each do |photo| %>
+  <li>
+    <%= image_tag( photo.image, :class => "thumbnail" ) %>
+    <ul>
+      <!-- <li><%#= site.to_json %></li> -->
+      <li>
+        Name: <%= link_to(photo.description, "/photos/#{photo.id}") %>
+      </li>
+
+    </ul>
+  </li>
+  <br>
+<% end %>
+</ul>

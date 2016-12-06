@@ -1,0 +1,9 @@
+<h3>Photos</h3>
+
+<ul>
+  <% @photos.each do |photo| %>
+
+       <%= link_to(image_tag( photo.image, :class => "thumbnail" ), "/photos/#{photo.id}") %>
+
+  <% end %>
+</ul>

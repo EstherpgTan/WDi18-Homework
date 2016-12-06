@@ -1,0 +1,19 @@
+<h3>Another Dive On The Wall</h3>
+<div class="container">
+  <div class="columns">
+    <img src="<%= @dive["image"] %>"</img>
+  </div>
+  <div class="columns">
+    <p>ID: <%= @dive["id"] %></p>
+    <p>Location: <%= @dive["location"] %></p>
+    <p>Photographer: <%= @dive["photographer"] %></p>
+    <p>Description: <%= @dive["description"] %></p>
+    <br>
+    <a href="/dives/<%= @dive["id"] %>/delete">
+      Delete Post
+    </a>  |
+    <a href="/dives/<%= @dive["id"] %>/edit">
+      Do Some Grammer
+    </a>
+  </div>
+</div>

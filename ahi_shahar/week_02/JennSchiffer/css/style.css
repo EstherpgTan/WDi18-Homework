@@ -139,8 +139,8 @@ body h1 {
   border-radius: 50%;
   background-color: black;
   background: radial-gradient(black 45%, ghostwhite 55%);;
-  width: 200px;
-  height: 200px;
+  width: 16%;
+  height: 20%;
   overflow: hidden;
   z-index: 900;
   font-size: 0;
