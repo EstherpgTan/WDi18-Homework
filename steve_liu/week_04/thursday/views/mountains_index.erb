@@ -1,0 +1,10 @@
+<br>
+<hr>
+<h2>List of Mountains</h2>
+
+<% @all_mountains.each do |mountain| %>
+  <h5><%=mountain["name"]%></h3>
+  <p>Mountain ID: <%=mountain["id"]%></p>
+  <p>Height (m): <%=mountain["height"]%></p>
+  <img src="<%=mountain['height']%>">
+<% end %>
