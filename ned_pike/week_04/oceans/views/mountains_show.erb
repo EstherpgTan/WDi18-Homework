@@ -1,0 +1,8 @@
+<p>ID: <%= @mountain["id"] %></p>
+<p>Name: <%= @mountain["name"] %></p>
+<p>Height: <%= @mountain["height"] %></p>
+<p>Description: <%= @mountain["description"] %></p>
+<div class="controls">
+  <a href="/mountains/<%= @mountain["id"] %>/edit">Edit</a>
+  <a href="/mountains/<%= @mountain["id"] %>/delete">delete</a>
+</div>

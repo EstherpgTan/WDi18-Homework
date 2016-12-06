@@ -1,0 +1,11 @@
+<h1>This is where cars live</h1>
+<% @all_cars.each do |car| %>
+
+  <ul>
+    <li><%= car["make"] %></li>
+    <li><a href="/cars/<%= car["id"] %>"><%= car["model"] %></a></li>
+    <li><%= car["image"] %></li>
+    <li><%= car["hp"] %></li>
+  </ul>
+
+<% end %>
