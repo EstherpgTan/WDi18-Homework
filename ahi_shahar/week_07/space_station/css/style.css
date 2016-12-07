@@ -1,0 +1,112 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 40vh;
+  max-height: 600px;
+  /*z-index: 11111111;*/
+  border-radius: 15px;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo Bhaina";
+  text-align: center;
+  background-image: url("http://wallpapercave.com/wp/kSQdCxM.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 55px;
+  margin: 0 auto;
+  font: 70px Tahoma, Helvetica, Arial, Sans-Serif;
+	text-align: center;
+  color: #222;
+  text-shadow: 0px 2px 3px #555;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+  box-shadow:
+		inset -25px 0 35px rgba(255,255,255,0.5);
+	border-radius: 0 20px 0 20px;
+	background: rgba(255,255,255,0.5);
+  width: 100%;
+  overflow: hidden;
+  height: 100px;
+  line-height: 100px;
+}
+
+.container {
+  min-height: 600px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.col {
+  float: left;
+  padding: 0 10px;
+}
+
+.col-2 {
+  width: 16.67676767676767%;
+  width: -webkit-calc(100%/6);
+  width: -moz-calc(100%/6);
+  width: -ms-calc(100%/6);
+  width: -o-calc(100%/6);
+  width: calc(100%/6);
+  min-height: 80vh;
+  /*border: 1px solid #EFEFEF;*/
+}
+
+.col-8 {
+  width: 66.666666666666;
+  width: -webkit-calc(100%/1.5);
+  width: -moz-calc(100%/1.5);
+  width: -ms-calc(100%/1.5);
+  width: -o-calc(100%/1.5);
+  width: calc(100%/1.5);
+}
+
+#ship {
+  position: fixed;
+  left: 48%;
+  top: 250px;
+  z-index: 1000000;
+  width: 30px;
+  height: 30px;
+}
+
+h2 {
+  line-height: 100%;
+  color: ghostwhite;
+}
+
+h4{
+  color: white;
+  font-size: 70px;
+  margin-top: 10px;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(255,255,255,0.75);
+}
+
+.search {
+  margin-top: 20px;
+}
+
+h5 {
+  font-size: 20px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.85);
+  margin: 0 auto;
+  padding: 10px 10px;
+}
