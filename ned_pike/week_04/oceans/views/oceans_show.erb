@@ -1,0 +1,15 @@
+<h3>This is the profile page of ocean <%= @ocean["name"] %></h3>
+<p>ID: <%= @ocean["id"] %></p>
+<p>Name: <%= @ocean["name"] %></p>
+<p>image: <img class="image" src="<%= @ocean["image"] %>" alt=""></p>
+<p>description: <%= @ocean["description"] %></p>
+<p>Height: <%= @ocean["height"] %></p>
+
+<div class="controls">
+    <a href="/oceans/<%= @ocean["id"] %>/delete">
+      Delete this ocean
+    </a> |
+    <a href="/oceans/<%= @ocean["id"] %>/edit">
+      Edit this ocean
+    </a>
+</div>

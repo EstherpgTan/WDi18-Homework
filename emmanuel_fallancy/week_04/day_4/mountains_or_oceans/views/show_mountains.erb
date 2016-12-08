@@ -1,0 +1,6 @@
+<% @mountains.each do | mountain | %>
+<div>
+  <p>Name: <a href="/mountains/<%= mountain[ "id" ] %>"><%= mountain[ "name" ] %></a></p>
+  <p>Height: <%= mountain[ "elevation" ] %>m</p>
+</div>
+<% end %>

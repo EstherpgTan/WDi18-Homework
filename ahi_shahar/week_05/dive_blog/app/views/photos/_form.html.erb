@@ -1,0 +1,34 @@
+<!-- Secure, reusable, assists with prefilling values -->
+<%= form_for @photo do |f| %>
+  <p>
+    <%= f.label :description %>
+    <%= f.text_field :description, :required => true %>
+  </p>
+  <p>
+    <%= f.label :year %>
+    <%= f.text_field :year, :required => true %>
+  </p>
+  <p>
+    <%= f.label :photographer %>
+    <%= f.text_field :photographer, :required => true %>
+  </p>
+  <p>
+    <%= f.label :site_id %>
+    <%= f.text_field :site_id, :required => true %>
+  </p>
+  <p>
+    <%= f.label :image %>
+    <%= f.url_field :image, :required => true %>
+  </p>
+
+  <%= f.submit %>
+<% end %>
+<!--
+t.text :name
+t.text :photographer
+t.text :location
+t.date :date
+t.text :tide
+t.text :level
+t.text :depth
+t.text :image -->

@@ -1,0 +1,16 @@
+
+<h3>SELECTED WINE</h3>
+
+
+<% @picked_wines.each do |the_wine| %>
+  <ul>
+<p>ID:<%= the_wine["id"] %></p>
+<p>GRAPE:<%= the_wine["grape"] %></p>
+<p>YEAR:<%= the_wine["year"] %></p>
+<p>REGION<%= the_wine["region"] %></p>
+<p>PRICE<%= the_wine["price"] %></p>
+<p>CURRENCY<%= the_wine["currency"] %></p>
+  </ul>
+  <a href="/wines_delete/<%= the_wine["id"] %>"><input type="submit" name="name" value="delete"></a>
+  <a href="/wines_edit/<%= the_wine["id"] %>"><input type="submit" name="name" value="edit"></a>
+<% end %>

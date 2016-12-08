@@ -1,0 +1,43 @@
+// Place all the styles related to the authors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.thumbnail {
+  max-width: 200px;
+}
+
+img {
+  max-width: 400px;
+}
+
+body {
+  font-family: monospace;
+  background-color: ghostwhite;
+  text-align: center;
+}
+
+a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkblue;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+span {
+  font-weight: bold;
+}
+
+h1 {
+  color: rebeccapurple;
+}
+
+h2 {
+  color: darkblue;
+  text-transform: uppercase;
+}

@@ -1,0 +1,35 @@
+body{
+  background-color: #F7FFF7;
+  text-align: center;
+}
+
+.searchBar{
+  text-align: center;
+  font-size: 12px;
+  width: 200px;
+  height: 20px;
+}
+
+.search{
+  margin: 10% auto;
+}
+
+.home{
+  background-color: #FFE66D;
+  text-decoration: none;
+  padding: 3px;
+  color: black;
+}
+
+.home:hover {
+  background-color: black;
+  color: #FFE66D;
+}
+
+.result{
+  margin: auto 10%;
+}
+
+#plot{
+  text-align: justify;
+}

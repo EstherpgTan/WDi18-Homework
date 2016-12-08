@@ -1,0 +1,84 @@
+* {
+  background-color: rgba(253, 241, 241, 0.4);
+
+}
+
+/* Page - Biography */
+nav {
+  background: black;
+  background-color: rgba(211, 150, 237, 0.4);
+  opacity: inherit;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+}
+
+.pages {
+  text-decoration: none;
+  width: 32%;
+  margin-top: 10px;
+}
+
+a {
+  display: inline-block;
+  border: 0.5px solid black;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:hover {
+  font-weight: 600;
+  color: rebeccapurple;
+}
+
+/* Page wrapper  */
+wrapper {
+  text-align: center;
+}
+
+/* Title and main image */
+.title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 30px;
+}
+.univac {
+  position: relative;
+  border-radius: 20px;
+}
+
+/* Paragraph and small image */
+.bug {
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+h3 {
+  font-size: 15px;
+  padding-bottom: 5%;
+}
+
+
+/* Page - Timeline */
+
+.timelineTitle h1 {
+
+  padding-top: 6%;
+}
+
+.timeline {
+  text-decoration: none;
+  height: 500px;
+  padding-top: 8%;
+}
+
+
+
+/* Page - Hometown */
+
+h1 {
+  padding-top: 6%;
+}

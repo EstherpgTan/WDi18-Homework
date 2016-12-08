@@ -1,0 +1,18 @@
+<h3><%= @site.name %></h3>
+
+<%= image_tag( @site.image, :class => "mainpic"  ) %>
+
+<p>Location: <%= @site.location %></p>
+
+<p>Maximum depth: <%= @site.depth %></p>
+
+<p>Minimum Cert: <%= @site.level %></p>
+
+<p>Preferred Tide : <%= @site.tide %></p>
+
+<p><%= link_to "Photos on site", "/site/#{@site.id}/photos" %> </p>
+
+<div class="controls">
+  <%= link_to "Edit Site", edit_site_path(@site) %>    |
+  <%= link_to "Delete Site", site_path(@site), :method => :delete, :data => { :confirm => "Are you sure?" } %>
+</div>

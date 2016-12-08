@@ -1,0 +1,37 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color:#808080b3;
+}
+
+.container {
+    margin: 40px;
+}
+
+.more {
+  text-decoration: none;
+  color: rgb(55, 232, 250)
+}
+
+.main {
+  width: 100%;
+}
+
+.end-content{
+  width:100%;
+  margin: 0 0 0 -2px;
+}
+
+.brand-wrap {
+  display: inline-block;
+  width: 23%;
+  margin: 0px 3px;
+}
+
+.brands {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    border: 3px solid rgb(187, 191, 184);
+}

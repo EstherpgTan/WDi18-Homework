@@ -1,0 +1,45 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.nav-link {
+  padding: 0 10px
+}
+
+img {
+  margin: 0 auto;
+}
+
+body {
+  text-align: center;
+}
+
+.main {
+  display: inline-block;
+}
+
+.right {
+
+  width:49%;
+  float: left;
+}
+
+.left {
+
+  width:49%;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.error {
+  display: block;
+}

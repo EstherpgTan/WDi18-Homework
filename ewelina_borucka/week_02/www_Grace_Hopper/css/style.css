@@ -1,0 +1,195 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	background-color: white;
+	color: #484848;
+	font-family: monospace;
+	margin: 0 0 50px;  /* bottom = footer height */
+}
+
+/* --------------------- navigation -------------------------------*/
+
+ul {
+	margin: 4%;
+	padding-left: 0;
+}
+
+li {
+	display: inline-block;
+	padding: 20px;
+	margin-right: 50px;
+	border: 1px solid #606060;
+	border-radius: 1px;
+}
+
+a {
+	text-decoration: none;
+	color: #484848;
+	padding: 20px;
+}
+
+li a:hover {
+	color: gray;
+	padding: 30px;
+	transition: 0.4s;
+}
+
+/* --------------------- section index---------------------------------*/
+
+h1 {
+	margin: 40px;
+	font-size: 44px;
+	font-weight: normal;
+	line-height: 68px;
+	color: #585858;
+}
+
+.quote1 {
+	margin-bottom: 100px;
+}
+
+.quote {
+	text-align: right;
+	font-size: 34px;
+}
+
+.wrapper {
+	margin: 0 5%;
+	overflow: auto;
+}
+
+.footer {
+	text-align: center;
+	font-family: "Raleway", sans-serif;
+	font-size: 8px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+}
+
+/* ----------------------  section work ------------------------------*/
+
+h2 {
+	font-weight: normal;
+	font-size: 44px;
+	margin-top: 10px;
+}
+
+h3 {
+	font-weight: lighter;
+	;
+	font-size: 17px;
+}
+
+.small {
+	float: left;
+	width: 50%;
+	margin-top: 20px;
+}
+
+.big {
+	float: left;
+	width: 50%;
+	margin-top: 20px;
+}
+
+/* ----------------------  section bio ------------------------------*/
+
+.content {
+	overflow: auto;
+	margin-top: 60px;
+}
+
+.photo {
+	float: left;
+	padding: 0 40px 20px 0;
+	;
+}
+
+.text {
+	font-size: 19px;
+	text-align: justify;
+	line-height: 25px;
+	margin-top: 0;
+}
+
+.more {
+	color: tomato;
+}
+
+.gradient1 {
+	color: #606060;
+}
+.gradient2 {
+	color: #707070;
+}
+.gradient3 {
+	color: #808080;
+}
+.gradient4 {
+	color: #909090;
+}
+
+/* ----------------------  tooltip ------------------------------*/
+
+.square {
+	position: relative;
+	border-bottom: 1px dotted black;
+	float: left;
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+}
+
+.square .square-text {
+	visibility: hidden;
+	width: 320px;
+	background-color: #484848;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 10px 0;
+	text-transform: capitalize;
+	position: absolute; 	/* position the tooltip */
+	z-index: 1;
+}
+
+.square:hover .square-text {
+	visibility: visible;
+}
+
+/* ----------------------  animation from www not mine ------------------------------*/
+
+/*#svg_2 {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation: dash 5s linear forwards;
+}
+@keyframes dash {
+	from {
+		stroke-dashoffset: 1000;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+#svg_3 {
+	stroke-dasharray: 4000;
+	stroke-dashoffset: 4000;
+	animation: dash_two 5s linear forwards;
+}
+@keyframes dash_two {
+	from {
+		stroke-dashoffset: 4000;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}*/

@@ -1,0 +1,53 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  line-height: 17px;
+  font-family: "Times New Roman", serif;
+  /*color: #656565;*/
+  color: #808080;
+
+}
+
+#container {
+  margin: 0 5%;;
+}
+/* ************** photos ***************** */
+
+.logo {
+  display: block;
+  height: 15px;
+  margin: 8px 0;
+}
+
+.main-photo {
+  width: 100%;
+}
+
+.four-square {
+  overflow: auto;
+}
+
+.four {
+  width: 24.8%;
+  float: left;
+  border: 3px solid #cccccc;
+  margin: 0.1%;
+}
+/* ************** links ***************** */
+
+a {
+  text-decoration: none;
+  color: #66b3ff;
+}
+a:hover {
+  color: #20222a;
+}
+
+footer p {
+  font-size: 9px;
+  margin: 1px;
+}

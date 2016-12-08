@@ -1,0 +1,98 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-style: italic;
+}
+
+html, body {
+  background: rgb(163, 166, 167);
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  background: black;
+  width: 100%;
+  margin: 0;
+  color: white;
+
+}
+
+.text {
+  position: relative;
+  left: 33%;
+  width: 1%;
+  height: 8em;
+  top: 3.5em;
+  color: #fff2f2;
+}
+
+.container {
+  padding: 60px;
+}
+
+
+.jumbotron {
+  background-image: url("http://www-cs-faculty.stanford.edu/~uno/dek-14May10-2.jpeg");;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: 0% 10%;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+         filter: gray;
+}
+
+.end, .links {
+  list-style: none;
+}
+
+.links {
+  display: inline-block;
+}
+
+.row {
+  overflow: auto;
+}
+
+.col-md-4 {
+  width:33%;
+  float:left;
+}
+
+.links1 {
+  display: inline-block;
+  text-decoration: none;
+  color:white;
+  padding-left: 20px;
+}
+
+
+
+.links1:hover {
+  color: grey;
+}
+
+.end {
+  text-align: left;
+}
+
+.last {
+  background: black;
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: -100px;
+  left: 0;
+  padding: 0 67px;
+
+}
+
+.sub {
+  position: relative;
+  left: 33%;
+  width: 14%;
+  height: 0em;
+  top: -3.5em;
+  color: #fff2f2;
+}

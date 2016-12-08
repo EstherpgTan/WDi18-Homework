@@ -1,0 +1,7 @@
+CREATE TABLE cars (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  make TEXT,
+  hp INTEGER,
+  model TEXT,
+  image TEXT
+);
