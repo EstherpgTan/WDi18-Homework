@@ -11,6 +11,7 @@ class Luhn
             # @number = @number.split('')
         # ... but we want to by able to multiply every second digit by two. The problem is, if we call the :* method on a string, it returns a string with the 'digit' repeated x times  - eg "5"*3 = "555". So we need to convert EACH element back to an integer, like this:
             # @number = @number.map(&:to_i)
+        # Why are we using map instead of each? They're similar, but .each performs the operation in the block for each element in the enumerable it was called upon, whereas map actually returns a new array, with the operations in the block having been performed on each element in the enumerable. 
         # Now we want to iterate over the resulting array and, starting from the checksum (which is now the 0th number in the array, because we reversed the numbers earlier). We also want the index of the element, because that's what determines whether the digit should be multiplied by two or not, so we'll use each_with_index.
             # @number.each_with_index do |digit, index|
                 # # our_code_here
